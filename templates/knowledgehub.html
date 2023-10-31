@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CSPD - Knowledge Hub</title>
+        <link rel="icon" type="image/png" href="static/images/favicon-32x32.png" sizes="32x32" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="/">CSPDxGCF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ url_for('knowledgehub') }}">Knowledge Hub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('intro') }}">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header-->
+        <header class="bg-dark py-1">
+            <div class="container px-5">
+                <div class=" gx-5 justify-content-center">
+                    <div class="text-center my-3">
+                        <h2 class="fw-bolder mb-4 header-gradient">Knowledge Hub</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        
+        <!-- Challenge section-->
+        <section class="py-2" id="challenge">
+            <div class="container">
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-lg-3"><h1 class="fw-bolder" style="text-align: left;">What is Climate Security?</h1></div>
+                    <div class="col-lg-9">
+                        <p style="text-align: justify;"><br/> Climate security is a broad concept that is used to refer to the threats and risks posed by the effects of climate change to the peace, stability, communities, and individuals. This encompasses a wide range of concerns, including the exacerbation of conflicts due to incompatible adaptive pathways, forced migrations resulting from sea-level rise or extreme weather events, and challenges to state sovereignty and governance. As highlighted by CGIAR, climate security underscores the nexus between climate change impacts and societal vulnerabilities. It emphasizes the necessity for a comprehensive and multidimensional approach to understand and address the complex challenges that arise from this intersection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="py-2" id="solution">
+            <div class="container">
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-lg-3"><h1 class="fw-bolder" style="text-align: left;">Climate Finance for Peace</h1></div>
+                    <div class="col-lg-9">
+                        <p style="text-align: justify;">The connection between Climate Finance and Security emphasizes the importance of coordinating financial measures to address climate change with the broader goal of sustainable and peaceful development. The Green Climate Fund (GCF) is central in this effort, directing substantial resources to countries facing socio-political challenges or with past conflicts. Recent research from CGIAR provides critical data: forty percent of the 1.3 billion individuals at risk from climate impacts live in these unstable regions, and a significant portion of GCF's funds are allocated there. Given this overlap of climate action and peace concerns, it's essential for the GCF, especially its Accredited Entities (AEs) and Direct Entities (DEs), to develop strategies that are aware of potential conflict risks. Failing to consider this can disrupt socio-economic systems, increase local conflicts, and result in difficulties in fund delivery. Integrating peace-focused considerations in programming can in turn better address country needs and direct funds more efficiently to the most vulnerable populations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote-->
+        <section class="py-2" style="background: linear-gradient(to right, #bddaa4, #cee0be, #fbe4ff);" id="quote">
+            <div class="quote-container" >
+                <p class="quote-text">“[Conflict] analysis is not just about countries areas with ongoing or recent armed conflicts and assessing what effects and risks they maintain, it is equally about understanding potential tensions, lower grade conflicts between different groups, making sure that they minimize any potential adverse side effects.”</p>
+                <p class="quote-author">— Lars Roth, Board Member GCF (GCF 18th Board meeting)</p>
+            </div>
+        </section>
+
+        <!-- Challenge section-->
+        <section class="py-2" id="glossary">
+            <div class="container">
+                <div class="row gx-4 gx-lg-5 justify-content-center align-items-start  my-4">
+                    <div class="col-lg-3"><h1 class="fw-bolder" style="text-align: left;"  >Glossary</h1></div>
+                    <div class="col-lg-4">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accredited Entity (GCF)
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    An organization that is officially vetted and approved by the Green Climate Fund to design, develop, and implement climate projects or programs using GCF resources.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Adaptation
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Adjustments in ecological, social, or economic systems in response to observed or expected changes in climatic stimuli and their effects.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Adaptive capacity
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The ability of systems, institutions, humans and other organisms to adjust to potential damage, to take advantage of opportunities, or to respond to consequences.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Climate Finance
+                                </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Financing channeled by national, regional, and international entities for climate change mitigation and adaptation projects and programs.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Climate Resilience
+                                </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The ability of a system to anticipate, prepare for, respond to, and recover from climate change impacts.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Conflict Assessment
+                                </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        In the context of climate finance, this refers to the analysis an examination and analysis of the dynamics and root causes of a conflict in an area of intervention, focusing on understanding its history, key actors, and potential solutions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    Conflict Management
+                                </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        In the context of GCF initiatives, it signifies strategies to address and mitigate conflicts that arise from or are exacerbated by climate change impacts or interventions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                    Conflict-sensitivity
+                                </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        An organizational approach to programming that understands both the context in which it operates and the interaction between that context and the program's operations aimed at minimizing risks (do-no-harm) and maximizing peace (do-good).
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading9">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                    Country Needs (GCF)
+                                </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        This relates to the specific climate-related requirements or challenges a country faces, guiding where and how resources are allocated.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading10">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    Direct Access Entities (GCF)
+                                </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Sub-national, national or regional organizations that need to be nominated by developing country National Designated Authorities (NDAs) or focal points.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading11">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    Disaster Risk Reduction (DRR)
+                                </button>
+                                </h2>
+                                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Strategies aimed at preventing new and reducing existing disaster risk.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading12">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                    Environmental Peacebuilding
+                                </button>
+                                </h2>
+                                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The process of addressing environmental degradation and natural resource scarcities as part of peace-building efforts, emphasizing the role of the environment in preventing conflict and building sustainable peace.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading13">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                    Gender Mainstreaming (GCF)
+                                </button>
+                                </h2>
+                                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The practice by the Green Climate Fund of integrating gender considerations into all its programs and projects. This ensures that both men and women have equitable access to the benefits of GCF-funded activities and that gender disparities in vulnerability to climate change are addressed.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading14">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                        Impact Assessment/Evaluation
+                                    </button>
+                                    </h2>
+                                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionright">
+                                        <div class="accordion-body">
+                                            A systematic process to determine the potential or actual significant effects of a proposed or actual project or policy on various aspects of the environment or society.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="accordion" id="accordionright">
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading15">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                    Impact Potential (GCF)
+                                </button>
+                                </h2>
+                                <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Refers to the magnitude of positive change a climate finance project can mobilize, guiding the allocation of resources to high-impact areas.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading16">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                                    Internally Displaced Persons (IDPs)
+                                </button>
+                                </h2>
+                                <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        People who have been forced to leave their homes due to factors such as natural disasters or conflicts but remain within their country's borders.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading17">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                    Mitigation
+                                </button>
+                                </h2>
+                                <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Efforts to reduce or prevent the emission of greenhouse gases.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading18">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                                    National Designated Authorities (NDAs)
+                                </button>
+                                </h2>
+                                <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Government institutions that serve as the interface between each country and the Fund.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading19">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                                    Natural Resource Management
+                                </button>
+                                </h2>
+                                <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Government institutions that serve as the interface between each country and the Fund.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading20">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                    Natural Resource Management
+                                </button>
+                                </h2>
+                                <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Government institutions that serve as the interface between each country and the Fund.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading21">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                                    Operational Risk
+                                </button>
+                                </h2>
+                                <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Potential challenges or losses arising from internal processes or external factors, affecting project execution or fund delivery.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading22">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                                    Participatory Action
+                                </button>
+                                </h2>
+                                <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        An approach that actively involves stakeholders, especially the communities affected, in the process of decision-making, research, or intervention.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading23">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                                    Peace Responsiveness
+                                </button>
+                                </h2>
+                                <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        The capacity of a program or initiative to adapt to the dynamics of peace and conflict, ensuring that interventions contribute positively to peace-building goals and avoid exacerbating tensions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading24">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                                    Redd+ 
+                                </button>
+                                </h2>
+                                <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Redd+ (Reducing Emissions from Deforestation and Forest Degradation): A mechanism aiming to incentivize a shift in land use to support conservation and sustainable use of forests.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading25">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                                    Reputational Risk 
+                                </button>
+                                </h2>
+                                <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        For the GCF, the potential negative perceptions arising from its actions or the actions of its partners, affecting trust and stakeholder relations.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading26">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                                    Results Areas (GCF) 
+                                </button>
+                                </h2>
+                                <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Areas of focus for the GCF, guiding the allocation of funds to projects addressing climate change's mitigation and adaptation challenges.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading27">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse27">
+                                    Results Areas (GCF) 
+                                </button>
+                                </h2>
+                                <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        Areas of focus for the GCF, guiding the allocation of funds to projects addressing climate change's mitigation and adaptation challenges.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading28">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                                    Risk Management Framework (GCF) 
+                                </button>
+                                </h2>
+                                <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28" data-bs-parent="#accordionright">
+                                    <div class="accordion-body">
+                                        The GCF's approach to identify and manage potential risks in its operations, ensuring the efficacy and impact of its interventions.
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <br/>
+        <section class="py-2" id="guidances" style="background: linear-gradient(to right, #bddaa4, #cee0be, #a7ffbe);">
+            <br/>
+            <div class="container">
+                <div class="row gx-4 gx-lg-5 align-items-center  my-4">
+                    <div class="col-lg-3"><h1 class="fw-bolder" style="text-align: left;">Guidance<br/>Notes</h1></div>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 mb-4">
+                                <!-- Portfolio item 1-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-droplet" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Health, Food, Water</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-4">
+                                <!-- Portfolio item 2-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-cash-coin" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Livelihoods</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-4">
+                                <!-- Portfolio item 3-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-sign-turn-slight-right" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Infrastructure and Built Environment</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-4">
+                                <!-- Portfolio item 3-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-globe-asia-australia" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Ecosystems</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+                                <!-- Portfolio item 3-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-lightbulb" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Energy</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+                                <!-- Portfolio item 3-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-bicycle" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Transport</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+                                <!-- Portfolio item 3-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-buildings" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Buildings, Cities, Industries</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+                                <!-- Portfolio item 3-->
+                                <div class="portfolio-item center-icon">
+                                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                                        <div class="feature bg-transparent text-primary" ><i class="bi bi-tree" style="font-size: 3rem;"></i></div>
+                                    </a>
+                                    <div class="portfolio-caption">
+                                        <div class="h6" style="text-align: left;">Forest and Land Use</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+        </section>
+        
+
+
+        <!-- Logos section-->
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                        <section class="logos-section small">
+                        <img src="/static/images/alliance.png" alt="Alliance Logo" class="logo">
+                        <img src="/static/images/FocusCS.png" alt="CGIAR FCS Logo" class="logo">
+                        <img src="/static/images/climber.png" alt="Climber Logo" class="logo">
+                        <img src="/static/images/FCM.png" alt="FCM Logo" class="logo">
+                        <img src="/static/images/Interpeace.png" alt="Interpeace Logo" class="logo small">
+                    </section>
+                    
+                </div> 
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-5">
+                <p class="m-0 text-center text-white">Copyright &copy; 2023 CGIAR System Organization. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="footer-link" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>
+                <div class="text-center mt-4">
+                    <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modala">Privacy</a> |
+                    <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modalb">Terms</a> |
+                    <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modalc">Acknowledgements</a> |
+                    <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modalx">Disclaimer</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+        <!-- Footer modal Privacy-->
+        <div class="portfolio-modal modal fade" id="modala" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Privacy Policy</h3>
+                                    <div class="container" style="text-align: left;">
+                                        <div>
+                                            <p>The CGIAR System Organization, as the Owner of the Site, and the CGIAR FOCUS Climate Security as the administrator of the Site, may collect, store, and use certain types of information about the Users of the Site.</p>
+                                            <p>1. General aspects</p>
+                                            <p>These terms address what happens to any personal data or personal information that you give to us, or any that we may collect from or about you, your affiliation, your results, name of the project or program, email, at this Site, hosted at www.cso.cgiar.org. It explains how, through the different features our Site hosts, we collect, use, protect or otherwise handle Personal Data or Personally Identifiable Information. Thus, it applies to all products and services, and instances where we collect such personal data and information.</p>
+                                            <p>Read this Policy carefully before you provide any Personal Data or Personally Identifiable Information to us. Please proceed if you find the following terms agreeable. Otherwise, you are always welcome to peruse our Site without sharing your Personal Data with us.</p>
+                                            <p>2. Key definitions</p>
+                                            <p>These are key terms used in this Policy:</p>
+                                            <p>&ldquo;Personally Identifiable Information&rdquo; or &ldquo;Personal Data&rdquo; means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as name, an identification number, location data, an online identifier, or to one or more factors specific to the physical, psychological, genetic, mental, economic, cultural, or social identify of that natural person.</p>
+                                            <p>&ldquo;Data Controller&rdquo; means the natural or legal person, public authority, agency or other bodies which, alone or jointly with others, determines the purposes and means of the processing of personal data.</p>
+                                            <p>&ldquo;Data Processor&rdquo; means a natural or legal person, public authority, agency or other bodies which processes personal data on behalf of the controller.</p>
+                                            <p>&ldquo;Data Subject&rdquo; is the natural person whose personal data is collected and/or processed.</p>
+                                            <p>3. Type of Information collected</p>
+                                            <p>Personal information</p>
+                                            <p>You can access and use the Site without providing any personal information. If you provide Personal Data through one of the forms available on the Site, you as Data Subject may be asked for information that helps to identify you, such as your name, email address, and name of your organization.</p>
+                                            <p>Non-personally identifiable information</p>
+                                            <p>We may also collect information about results, publications, data and information generated in projects, participation in events and activities, communications through or with the different components of the Site, and uploads or posts.</p>
+                                            <p>We may ask you to share results obtained by you when running analytical tools available at our Site. In this case, you are completely free to refuse or to accept sharing such results with us. Refusing to share your results with the CSO Site does not affect in any way your access to our tools and the ability to run the analyses and obtain your results. If you agree to share your results with us, such results will be showcased at the CSO Site (or Sites) and will be used as per the conditions applicable to &ldquo;Contributed Materials &rdquo; described in the Terms of Use &nbsp;of the Site.</p>
+                                            <p>We may also track and analyse information about how Site visitors use the Site by using cookies and collecting IP address information. This information helps us learn about the geographical distribution of our Site visitors and the technology they use to access the Site.</p>
+                                            <p>Only summaries of visitors&rsquo; behaviour are produced. We use Google Analytics to generate anonymous usage information. The information collected cannot be traced back to a particular individual and is never connected with any personal information you supply to us. Examples of this type of information include statistics on most popular and least popular pages.</p>
+                                            <p>You are always free to decline our cookies if your browser permits, although in that case you may not be able to use certain features on the Site and may be required to re-enter information more frequently to use certain services on the Site.</p>
+                                            <p>4. Points for collection of information</p>
+                                            <p>Information can be collected when you register on the Site, fill out a form, decide in favour of sharing analytical results obtained with tools available at the Site, use an available tool or service, or enter/upload information on the Site. It is also collected when you provide feedback on the Site&rsquo;s products or services. While not all these points may require you to provide information, we note them for your awareness.</p>
+                                            <p>5. Use of the collected information</p>
+                                            <p>Personally Identifiable Information collected is used internally by the CGIAR FOCUS Climate Security at the CGIAR System Organization as Data Controller and Data Processor to process your and other users use of the Site, to process your communication with us and is not shared with third parties. The CGIAR FOCUS Climate Security at the CGIAR System Organization manages information collected in this Site in accordance with the research and innovation strategy of the CGIAR System Organization.</p>
+                                            <p>We may use such information in the following ways:</p>
+                                            <p>&bull; &nbsp; &nbsp;To personalize your experience and to allow us to deliver the type of content, tools and services in which you are most interested or need the most.</p>
+                                            <p>&bull; &nbsp; &nbsp;To help diagnose and solve issues with the site in order to improve it and better serve you.</p>
+                                            <p>&bull; &nbsp; &nbsp;To follow up with you after correspondence (live chat or email inquiries), send information, respond to inquiries, and/or other requests or questions.</p>
+                                            <p>Non-personal information is used to generate usage statistics for the Site so that the we can better understand the preferences of the Site&rsquo;s visitors and improve the Site.</p>
+                                            <p>Information such as project scoring results obtained by you while using tools available at the Site will be used to build up a database of interventions to be showcases at the CSO Site in future versions.</p>
+                                            <p>In particular, the CGIAR System Organization retains information for &ldquo;archiving purposes in the public interest, scientific or historical research purposes or statistical purposes&rdquo;, as per the scope at point a, of the article 17, paragraph 3, of the Regulation (EU) 2016/679 of the European parliament and of the Council &ldquo;General Data Protection Regulation (GDPR)&rdquo; of 27th April 2016.</p>
+                                            <p>6. Change of purpose of use</p>
+                                            <p>We will only use your Personal Data for the purposes for which we collected it, unless we reasonably consider that we need to use it for another reason and that reason is compatible with the original purpose. If you wish to get an explanation as to how the processing for the new purpose is compatible with the original purpose, please contact us.</p>
+                                            <p>If we need to use your Personal Data for an unrelated purpose, we will notify you and we will explain the legal basis which allows us to do so.</p>
+                                            <p>Please note that we may process your Personal Data without your knowledge or consent, in compliance with the above rules, where this is required or permitted by law.</p>
+                                            <p>7. Use of cookies</p>
+                                            <p>Cookies are small files that a site or its service provider transfers to your computer&amp;apos;s hard drive through your Web browser (if you allow) that enables the site&amp;apos;s or service provider&amp;apos;s systems to recognize your browser and capture and remember certain information.</p>
+                                            <p>You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this Site may become inaccessible or not function properly. We use cookies for a variety of reasons detailed below:</p>
+                                            <p>&bull; &nbsp; &nbsp;Login related cookies:</p>
+                                            <p>We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.</p>
+                                            <p>&bull; &nbsp; &nbsp;Email newsletters related cookies:</p>
+                                            <p>This Site may offer newsletter or email subscription services and cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribed/unsubscribed users. By providing your email address, you consent to receive such communications. If at any time you would like to unsubscribe from receiving future emails, you can email the provided &ldquo;unsubscribe&rdquo; email on the applicable page, and we will promptly remove you from all correspondence.</p>
+                                            <p>&bull; &nbsp; &nbsp;Surveys related cookies:</p>
+                                            <p>From time to time we offer User surveys and questionnaires to provide you with interesting insights, helpful tools, or to understand our User base more accurately. These surveys may use cookies to remember who has already taken part in a survey or to provide you with accurate results after you change pages.</p>
+                                            <p>&bull; &nbsp; &nbsp;Forms related cookies:</p>
+                                            <p>When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence or interaction with you.</p>
+                                            <p>&bull; &nbsp; &nbsp;Site preferences cookies:</p>
+                                            <p>In order to provide you with a better experience on this Site, we provide the functionality to set your preferences for how this Site runs when you use it. In order to remember your preferences, we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences.</p>
+                                            <p>&bull; &nbsp; &nbsp;Performance cookies:</p>
+                                            <p>They collect data on the performance of the website, such as the number of visitors, the time spent by visitors on the web page and error messages. These performance cookies are session cookies (this means that these are automatically deleted when shutting down your browser) or persistent cookies (these files stay in one of your browser&rsquo;s subfolders until you delete them manually or your browser deletes them based on the duration period contained within the persistent cookie&rsquo;s file).</p>
+                                            <p>In some special cases we also use cookies provided by trusted third parties, such as :</p>
+                                            <p>&bull; &nbsp; &nbsp;Google Analytics. These performance cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
+                                            <p>&bull; &nbsp; &nbsp;Third party analytics are used to track and measure usage of this site so that we can continue to produce engaging content. These cookies may track things such as how long you spend on the Site or pages you visit which helps us to understand how we can improve the Site for you.</p>
+                                            <p>&bull; &nbsp; &nbsp;From time to time we test new features and make subtle changes to the way that the Site is delivered. When we are still testing new features, these cookies may be used to ensure that you receive a consistent experience whilst on the Site whilst ensuring we understand which optimisations our users appreciate the most.</p>
+                                            <p>&bull; &nbsp; &nbsp;We employ several web services designed to improve the user experience and expand CSO capabilities. For these to work, the web services will set cookies through the Site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+                                            <p>&bull; &nbsp; &nbsp;We use social media buttons and/or plugins on this site that allow you to connect with some social media sites, including Twitter and YouTube. These sites use their own cookies. The cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+                                            <p>8. Sharing information</p>
+                                            <p>Personal Data is:</p>
+                                            <p>&bull; &nbsp; &nbsp;shared internally in order to process communications, offer services and tools, process research and innovation-related information.</p>
+                                            <p>We also may share your data with:</p>
+                                            <p>&bull; &nbsp; &nbsp;A partner and member of the CGIAR, which includes CGIAR Centers and research programs;</p>
+                                            <p>&bull; &nbsp; &nbsp;A trusted suppliers, e.g. service providers, consultancy firms or independent consultants, and to entities hired to process the data (Data Processors) on behalf of us, as the Data Controller.</p>
+                                            <p>We may disclose your Personal Data to third parties:</p>
+                                            <p>&bull; &nbsp; &nbsp;Where we are under a duty to disclose or share your Personal Data in order to comply with a legal obligation, enforce our terms, protect the rights, property or safety of Data Controller, our customers or others. This includes exchanging information for fraud prevent and to prevent cybercrime.</p>
+                                            <p>Non-personal information may be shared within the CGIAR System Organization, with Centers and programs or intiatives, and with companies and/or consultants involved in publications, disclosure or communications activities. Notice also that Non-personal information may also be shared by Google with its partners.</p>
+                                            <p>9. Storage of information</p>
+                                            <p>For some of our internal systems, your Personal Data is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive information you supply is encrypted via Secure Socket Layer (SSL) technology.</p>
+                                            <p>Personal Data that is collected and stored by third-party services is protected according to the privacy policies of each of these providers. Non-personal information is stored on Google servers in accordance with their security and data protection policies and procedures.</p>
+                                            <p>10. Retention time</p>
+                                            <p>Personal information is retained for the length of time it is needed for use and for as long as is reasonably necessary to achieve the purposes for which it is collected and for our legal entitlements and legitimate business interests.</p>
+                                            <p>Information such as IP address, the one collected through cookies, the URL/domain name of any referring website, and so on is maintained indefinitely in aggregated form.</p>
+                                            <p>11. Third-party links</p>
+                                            <p>At our discretion, we may include third-party links on our Site. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. To avoid any doubt, we do not assume responsibility for the information you may provide to that third party or on/at that website, or for how that third party may use or disclose any information you may provide to them. Nonetheless, we seek to protect the integrity of our Site and welcome any feedback about these sites.</p>
+                                            <p>12. Data Subject Rights</p>
+                                            <p>Data Subject is the natural person whose personal data is collected and/or processed. As such, you can, at any time: access your Personal Data to know the details of treatment of them, update them, rectify them in the event of being inaccurate, incorrect or outdated, and cancel or delete it when it is considered not required for any of the purposes indicated in this privacy policy, or are being used for purposes not consented.</p>
+                                            <p>In case any of the above mentioned circumstances apply, &nbsp;please contact us , or write or communicate to the physical address stated below. The CSO team will attend your claim as soon as possible.</p>
+                                            <p>If there are any questions regarding this privacy policy, you may contact us using the information below.</p>
+                                            <p>CGIAR System Organization<br>1000, Avenue Agropolis<br>F-34394 Montpellier cedex 5<br>France<br>P: +33 (0)4 67 04 78 00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer modal Terms-->
+        <div class="portfolio-modal modal fade" id="modalb" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;    
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Terms of Use</h3>
+                                    <div class="container" style="text-align: left;">
+                                        <div>
+                                            <p>Welcome to the Climate Security Programming Dashboard, part of the Climate Security Observatory (CSO) platform (the &ldquo;Site&rdquo;) (www.cso.cgiar.org). The Site is an online platform that aggregates and processes global data for climate, environmental, peace and security indicators, applying qualitative and quantitative methods to understand the How, What, Where and Who components of the climate-security nexus at different national and subnational scales.<br><br>The CGIAR FOCUS Climate Security maintains and administers the Site, which abides by the policies and terms of the CGIAR (https://www.cgiar.org/) and it is owned by the CGIAR System Organization (&ldquo;Owner&rdquo;).<br><br>In accessing and using the Site, including its subdomains, associated websites, mobile applications and extranets, as applicable, each a &ldquo;Site&rdquo; and collectively the &ldquo;Sites&rdquo;, you (the &ldquo;User&rdquo;) agree to comply with and be bound by these terms and conditions of use (&ldquo;Terms of Use&rdquo;) and with the Privacy Policy , unless specific terms apply to a Site or Sites. By accessing or using data, methods, tools, any other type of information, or services provided in or through the Site or Sites, you are deemed to accept and be bound by the Terms of Use, as well as any applicable international, national or local laws and regulations. If you do not agree with any of these Terms of Use, you may browse the Site or Sites yet you are prohibited from accessing or using data, methods, tools, any other type of information, or services provided in or through this Site or Sites.<br><br>The CGIAR FOCUS Climate Security and the Owner hereby reserve the right to modify these Terms of Use at its discretion at any time, such modifications being effective when posted. &nbsp;You as User are responsible for checking these Terms of Use periodically to see whether they have changed.<br><br>By using the Site, you as User agree to be bound by the then current version of the Terms of Use, and to have accepted the Privacy Policy &nbsp;applicable to the Site.</p>
+                                            <p>2. Copyright</p>
+                                            <p>Unless otherwise explicitly stated, the following copyright notice applies to the Site (or Sites):<br><br>Copyright &copy;2023 CGIAR System Organization<br><br>Unless otherwise specified, the content, organization, graphics, design, audio, animation, video, compilation, magnetic translation, digital conversion, infrastructure, design and services on the Site (or Sites), as well as their selection and arrangement, are protected by copyright and any other applicable property rights, including intellectual property rights. The Owner holds the title to the Site (or Sites) unless otherwise specified.<br><br>Note that except as otherwise explicitly stated, you as User do not acquire ownership rights to any content, document or other materials viewed, consulted or accessed through the Site.</p>
+                                            <p>3. Access and Use of Content</p>
+                                            <p>Access and use of this Site or Sites and its content is provided in accordance with the CGIAR Principles on the Management of Intellectual Assets and the CGIAR Open and FAIR Data Assets Policy.<br><br>In addition, CGIAR System Organization is an International Aid Transparency Initiative (IATI) publisher (XM-DAC-47015) and reserves the right to publish any Materials (see below) to the IATI Registry (directly or via third party).<br><br>The content or materials accessed through the Site, include but are not limited to raw data, annotated or otherwise analyzed data, databases, information, reports, videos, images, figures, diagrams, maps, presentations, written documents such as briefs, reports, memoranda, discussion papers, articles (including peer-reviewed articles), books, book chapters, capacity building materials, websites, methods, tools, software, and services (referred all as &ldquo;Materials&rdquo;), which can be generated, created or developed either a. &nbsp;by the CGIAR FOCUS Climate Security (&ldquo;CSO Materials&rdquo;); b. by CGIAR staff or personnel working at or for any of the Action Areas, Initiatives, Platforms or groups, including staff of or personnel associated with CGIAR Centers; or by CGIAR Funders (&ldquo;Contributed Materials&rdquo;); or c. belonging to or originated by third parties, including partners or collaborators, made available through the Site by uploading of such Material, or through links, or by citation or aggregation (&ldquo;Third Party Materials&rdquo;).</p>
+                                            <p>a. CSO Materials</p>
+                                            <p>Unless otherwise explicitly stated, CSO Materials, except for software and images (photos, or videos, or audio files of people), are available under the Creative Commons Attribution-NonCommercial License 4.0 International (CC-BY-NC 4.0), that allows you to download, copy, reproduce, modify, remix, build upon, disseminate, publish without seeking permission from the Owner as long as it is for non-commercial purposes, you give credit to the authors or to the owner as provided in the respective citation, and the copyright notice and this license remain with any of the CSO Materials, even if they become part of derived works. Full terms of the license are available here.</p>
+                                            <p>If as a User of CSO Materials you wish to deviate from these licensing conditions, contact the CGIAR FOCUS Climate Security to seek prior authorization. Nothing in these Terms obliges the CGIAR FOCUS Climate Security or the Owner to grant such prior authorization.</p>
+                                            <p>b. Contributed Materials</p>
+                                            <p>If you decide to contribute Materials to the CSO Site, you must have the right to make such a contribution. You must be the owner of, or have the control over, or have created, generated or developed such Contributed Materials. As the owner of Contributed Materials, you or the organization you represent (e.g. a specific CGIAR Center, a CGIAR funding organization), as applicable, shall retain copyright on the Contributed Materials.</p>
+                                            <p>If Contributed Materials are owned by a third party, you must make sure that you have the rights to grant to the Owner the license hereby specified, and allow the CGIAR FOCUS Climate Security to use the hereby specified license. As a contributor you agree to grant the Owner, its successors and assignees, a free-of-charge access, royalty-free, perpetual, worldwide, non-exclusive, and sublicensable license to use, copy, reproduce, modify, adapt, publish, translate, perform, create derivative works, disseminate or otherwise make available to the public your Contribution in the Site (or Sites), for the full term of any rights that may exist in your Contribution. If you decide to share your results with the CSO Site, they will be available under the Creative Commons Attribution-NonCommercial License 4.0 International (CC-BY-NC 4.0).</p>
+                                            <p>Notice that as User you are completely free to share or not Materials with the Owner or the CGIAR FOCUS Climate Security through the Site. If you decide to share or contribute Materials, you may be prompted to provide information about the name of the organization you come from, represent or employs you, the name of the project or program under which such Materials are generated, and your email address. Some of such information may be deemed Personal Data and in this case, it would be governed by the Privacy policy &nbsp;of the Site.</p>
+                                            <p>Contributors must warrant to the best of their knowledge that the Contributed Materials do not infringe the rights of any third party, including copyrights, trademarks or any other intellectual property rights, tangible property rights, privacy protection, prior informed consent, farmers&rsquo; rights, rights on traditional knowledge, and/or biodiversity-related access and benefit-sharing rights. In case of doubt, as a contributor, you shall abstain from providing Contributed Materials to the Site or if already contributed, withdraw such Contributed Materials.</p>
+                                            <p>You also represent and warrant that the uploaded content has been verified in accordance with applicable quality standards and internal checks, including scientific accuracy at your organization or through a quality external review. As a User and contributor, you agree not to upload, post, transmit or otherwise make available any content that is unlawful, racially motivated, harmful, hateful, harassing, obscene, invasive of another&rsquo;s privacy, or that infringes any patent, trademark or other proprietary rights of any party.</p>
+                                            <p>If you make available on the Site any content of an experimental nature or pending quality and accuracy verification, this must be expressly stated by you with a disclaimer. You are solely responsible for the licensing of any content shared through, tagged within, displayed in and uploaded to the Site, comprising but not limited to copyright compliance, dissemination, visibility and usability of the content. You are responsible for the correct attribution of the content shared through, tagged within, displayed in and uploaded to the Site and of the accuracy of associated metadata. The User assumes full responsibility for any omission and incorrect or partial information provided while sharing through, tagging within, displaying in and uploading any content to the Site, intentionally or unintentionally.</p>
+                                            <p>The Owner or the CGIAR FOCUS Climate Security may, but is not obligated to, review your Contributions. The Owner or the CGIAR FOCUS Climate Security may, in its sole discretion, remove your Contributed Material if it establishes that violates these Terms of Use.</p>
+                                            <p>If you delete or withdraw a Contributed Material, neither the Owner nor the CGIAR FOCUS Climate Security warrant that it will be able to or will take responsibility for removing deleted contributions from the Site, including but not limited to those outside of its reasonable control or those to whom you or others may have forwarded your Contributed Material.</p>
+                                            <p>Acceptance of a Contribution Material does not constitute an endorsement or sponsorship of the Contribution by the Owner or by the CGIAR FOCUS Climate Security. The contributor shall defend, indemnify, and hold the Owner (including the CGIAR FOCUS Climate Security) harmless from any resulting claims, damages or costs (including reasonable attorney fees) in case of false or misleading information or negligence.</p>
+                                            <p>c. Third Party Materials</p>
+                                            <p>Third Party Materials are governed by the terms applicable and contained in third party websites or as explicitly stated by such third parties. Neither the Owner nor the CGIAR FOCUS Climate Security are responsible for or have the control over such Third Party Materials. The Owner and the CGIAR FOCUS Climate Security make no warranties or representations about the content, information, products, or services offered by third parties. The Owner and the CGIAR FOCUS Climate Security provide access to such Third Party Materials for information purposes and convenience only. The Owner and the CGIAR FOCUS Climate Security will make best efforts but does not ensure revision of Third Party Material. Display of Third Party Materials does not constitute endorsement or sponsorship by the Owner or by the CGIAR FOCUS Climate Security of any Third Party Materials. Use of any such Third Party Material is at the User&rsquo;s own risk.</p>
+                                            <p>If as a Third Party and as a User, you decided to freely contribute Materials to the Site, the terms and conditions as stated under &ldquo;Contributed Materials&rdquo; will apply to you and the contributed Materials.</p>
+                                            <p>4. Images and audio visuals</p>
+                                            <p>The CSO Site uses images (photos) and audio visuals that have been created or generated by CGIAR, including staff working at or for the CGIAR Centers, through its diverse programs, projects and events, and also images or videos available at platforms such as Vimeo.</p>
+                                            <p>Images and audio visuals used may have their own applicable license. The CGIAR FOCUS Climate Security either mentions, lists or provides a link to the ownership and use terms applicable to such images and audio visuals. Users must access and use such images and audio visuals in accordance to the terms stipulated in the applicable license.</p>
+                                            <p>All photos, videos or audios, particularly where people could be identified, are for non-profit activities including education, research, and related personal activities subject to proper attribution and compliance of the applicable terms. Please contact us &nbsp;if you have any questions.</p>
+                                            <p>5. Accuracy of the Materials</p>
+                                            <p>Materials appearing on the Site could include technical, typographical, or photographic errors. While the CGIAR FOCUS Climate Security may make efforts to work on the quality and completeness of the Materials, it does not warrant that any of such Materials on the Site are accurate, complete or current. The CGIAR FOCUS Climate Security may make changes to any Materials contained on the Site at any time without notice. Nevertheless, the CGIAR FOCUS Climate Security does not make any commitment to update the Materials. Users and contributors of the Site are completely responsible for the accuracy of the content uploaded by them.</p>
+                                            <p>Users can make use of third parties services and contents provided by and embedded in the Site after reading and accepting the associated and applicable Terms of Use and Privacy Policy. The Owner is not responsible for the correct functioning and availability of those third party services or tools, and declines any direct and indirect liability in this regard.</p>
+                                            <p>6. User&rsquo;s Responsibilities</p>
+                                            <p>The CGIAR FOCUS Climate Security might decide that a User may need to register and/or create a User account to access or use certain sections of the Site, Materials or other Site features. In such a case, the User will represent and warrant that (i) the User is of legal age or possess legal parental or guardian consent and fully able and competent to abide by and comply with these Terms of Use; and (ii) if the User represents a legal entity, the User has authority to bind such legal entity to these Terms of Use. The User will be responsible for keeping the password and other relevant login information confidential and shall inform the Owner or the CGIAR FOCUS Climate Security if at any point the User considers that her or his password or login information have been compromised and/or is being misused by someone else and shall take such action as is required and/or is requested by us to prevent such misuse. The User is responsible for all activities conducted under her or his User account.</p>
+                                            <p>By accessing and using this Site and all its content, you as User agree not to use them for any unlawful, illegal, fraudulent or harmful purpose and activity or in any way that would violate the Owner&rsquo;s and third-party rights, including but not limited to intellectual property rights.</p>
+                                            <p>Any action that causes, or may cause, damage to the Site or disability of the performance, availability or accessibility of the Site and its content is prohibited.</p>
+                                            <p>7. Use of Logo</p>
+                                            <p>The Owner logo, formed by its brandmark, the icon or symbol and the tagline, is owned by the CGIAR System Organization. Likewise, the CGIAR System Organization owns the brandmark, the icon or symbol and the tagline, as applicable, of the CGIAR Initiatives and the Climate Security Observatory. &nbsp;In particular, the CSO icon or symbol and the tagline was designed and first expressed in its fixed form in [insert month and year ]. The CSO logo and the other Owner&rsquo;s logo identify the Site as well as activities carried out at or by the platform. All the current logos and any variations that might be introduced to them from time to time are protected by copyright, with all rights reserved:</p>
+                                            <p>Copyright &copy;2023 CGIAR System Organization</p>
+                                            <p>You or any of your agents, employees and/or sub-contractors as Users of the Site, or you or any of your agents, employees and/or sub-contractors as users generating content for or at the Site, or any third party are not authorized to copy, reprint, record, photograph, depict, publish, distribute, incorporate, or use the CSO logo or any of the Owner&rsquo;s logos, in any form or way, without the prior written authorization from the Owner.</p>
+                                            <p>8. Disclaimer</p>
+                                            <p>All the Materials on the Site are provided on an &amp;apos;AS IS&amp;apos; basis. Neither the Owner nor the CGIAR FOCUS Climate Security makes warranties, expressed or implied, including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, non-infringement of intellectual property rights or any other violation of rights.</p>
+                                            <p>While the CGIAR FOCUS Climate Security and the Owner abide by the highest scientific and technical standards, the Owner and the CGIAR FOCUS Climate Security do not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the data, information, tools, content or any other Materials on its Site or Sites, or otherwise relating to such Materials, or on any other Sites, sites or websites linked to this Site.</p>
+                                            <p>References to geographical or other territories and groupings are based on [insert the sources of the maps and territories names used at CSO ], terminology used by other relevant international organizations or other sources deemed relevant by the CGIAR FOCUS Climate Security. The use of such references and terminology used on this Site, as well as, in the materials contained therein or linked to, do not constitute or imply an expression of opinion by the Owner or the CGIAR FOCUS Climate Security concerning the status of any State or territory, or its frontiers or sovereignty. The colours, boundaries and names shown and the designations used on maps available from or through the Site are not intended to imply any judgment, official endorsement, or acceptance by the Owner or by the CGIAR FOCUS Climate Security as to the legal status or frontier of any territory.</p>
+                                            <p>While it is our goal to minimize disruption caused by technical errors, we cannot guarantee that our service will not be interrupted or otherwise affected. The Owner and the CGIAR FOCUS Climate Security accept no responsibility with regard to such problems incurred as a result of using this Site or any linked external sites.</p>
+                                            <p>The CGIAR FOCUS Climate Security may change material on the Site without prior notice.</p>
+                                            <p>9. Liabilities and Indemnification</p>
+                                            <p>Except as prohibited by law, in no event shall the Owner, nor any of their agents, employees, suppliers and/or sub-contractors be liable to you or any other party for any claim, loss, demand or damages whatsoever (whether such claims, loss, demands or damages were foreseeable, known or otherwise, and including, without limitation, special, indirect, punitive or consequential damages or damages for any loss of data or profit, or due to business interruption) arising out of or in connection with the access, use of or reliance on the Site or information, content or materials created included on the Site by you or any of your agents, employees and/or sub-contractors. You as User are solely responsible for your submission of material to the Site, the use of the Site and for any claims relating to its content. You agree to indemnify, defend and hold the Owners and our partners, attorneys, staff and affiliates harmless from any liability, loss, claim and expense, including reasonable attorney&rsquo;s fees, related to your violation of these Terms of Use.</p>
+                                            <p>10. Governing law and Dispute Resolution</p>
+                                            <p>These Terms of Use are governed by and construed in accordance with the General Principles of Law, to the exclusion of any single national system of law.</p>
+                                            <p>If a dispute arises between the Owner and you out of or in connection with these Terms of Use and the Privacy Policy , including any question regarding their existence, validity, interpretation, implementation or termination, you and the Owner will try to settle such dispute amicably through negotiation.</p>
+                                            <p>If any dispute cannot be settled amicably within 60 (sixty) days, either party shall be entitled at that point to refer the dispute to be resolved by arbitration in accordance with the UNCITRAL Arbitration Rules in effect at the time of the dispute. There will be one arbitrator appointed by the parties by mutual consent, or failing this, by the Secretary-General of the Permanent Court of Arbitration. The place of arbitration will be Paris, France and the language to be used in the arbitration proceedings will be English. Unless otherwise expressly provided in these Terms of Use, the arbitral tribunal will have no authority to award (i) punitive damages, or (ii) damages for consequential or indirect losses. The arbitral award shall be final and binding on both parties.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="modalc" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Acknowledgements</h3>
+                                    <div class="container" style="text-align: left;">
+                                        <p>This work was developed under the <a href="https://www.cgiar.org/initiative/climate-resilience/" target="_blank" rel="noopener noreferrer">CGIAR Initiative on Climate Resilience, ClimBeR</a>, and the <a href="https://www.cgiar.org/initiative/fragility-conflict-and-migration/#:~:text=The%20CGIAR%20Initiative%20on%20Fragility,equity%2C%20and%20fostering%20social%20inclusion." target="_blank" rel="noopener noreferrer">CGIAR Initiative on Fragility, Conflict, and Migration</a>, and was supported by the <a href="https://www.cgiar.org/initiative/climate-resilience/" target="_blank" rel="noopener noreferrer">Initiative on Livestock and Climate and the Initiative on AgriLAC Resilience</a>. We would like to thank all funders who supported this research through their contributions to the CGIAR Trust Fund (<a href="https://www.cgiar.org/funders/" target="_blank" rel="noopener noreferrer">Funders</a>).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="modalx" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">Disclaimer</h3>
+                                    <div class="container" style="text-align: left;">
+                                        <p>This publication has been prepared for information purposes only. No claim or representation is made or warranty given as to the accuracy, completeness or authenticity of the information. The CGIAR System Organization shall not in any way be held liable for any loss or damage direct or indirect caused by any inaccuracies or errors in the publication.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+        /* ---- particles.js config ---- */
+
+        particlesJS("particles-js", {
+            particles: {
+            number: {
+                value: 50,
+                density: {
+                enable: true,
+                value_area: 800
+                }
+            },
+            color: {
+                value: ["#fdc82f", "#64977b", "#8ab5ff", "#cccccc"]
+            },
+            shape: {
+                type: ["circle", "triangle"],
+                stroke: {
+                width: 0,
+                color: "#fff"
+                },
+                polygon: {
+                nb_sides: 5
+                },
+            },
+            opacity: {
+                value: 0.6,
+                random: false,
+                anim: {
+                enable: false,
+                speed: 100,
+                opacity_min: 0.1,
+                sync: false
+                }
+            },
+            size: {
+                value: 8,
+                random: true,
+                anim: {
+                enable: false,
+                speed: 100,
+                size_min: 10,
+                sync: false
+                }
+            },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#808080",
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 1,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200
+                }
+            }
+            },
+            interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: {
+                enable: true,
+                mode: "grab"
+                },
+                onclick: {
+                enable: true,
+                mode: "push"
+                },
+                resize: true
+            },
+            modes: {
+                grab: {
+                distance: 140,
+                line_linked: {
+                    opacity: 1
+                }
+                },
+                bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3
+                },
+                repulse: {
+                distance: 200,
+                duration: 0.4
+                },
+                push: {
+                particles_nb: 4
+                },
+                remove: {
+                particles_nb: 2
+                }
+            }
+            },
+            retina_detect: true
+        });
+        </script>
+    
+        <!-- Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">HEALTH, FOOD, AND WATER SECURITY</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: Conflict has a deep and interrelated impact on health, food, and water security. With agriculture heavily dependent on freshwater withdrawals, disruptions to water supplies can heavily affect food production, which in turn affects health. In fragile and conflict-affected settings, poor governance and climate change exacerbate these challenges, leading to heightened competition for resources and the weaponization of vital assets like water. Projects in such locations, if not aware of conflict dynamics, can inadvertently exacerbate grievances and undermine their contributions to peace and stability – two key factors needed for long-term success in climate adaptation. Hence, incorporating conflict-sensitivity is vital for effective programming in these settings.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">LIVELIHOODS OF PEOPLE AND COMMUNITIES</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: Projects aimed at enhancing livelihoods through climate-resilient adaptation measures in Fragile and Conflict-affected Settings (FCS) can carry high operational risks.  They may exacerbate conflict by impacting the complex interactions between socio-economic, cultural, and environmental factors that drive fragility, conflict, and violence. For example, such projects may inadvertently disrupt power dynamics amongst groups by implementing livelihood projects that favor one group over another. Being insufficiently aware of conflict dynamics may also undermine the achievement of the project’s goals and its potential to contribute to peace and stability – peace and stability being important pre-requisites for achieving long-term success in climate action. Hence, a comprehensive understanding and application of conflict-sensitive approaches in these projects is not just advisable, but essential for their overall success and sustainability.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">INFRASTRUCTURE AND BUILT ENVIRONMENT</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: Infrastructure projects in fragile and conflict affected settings are susceptible to numerous operational challenges, which might inadvertently escalate existing socio-economic and political tensions. Infrastructure, being intricately connected to the daily lives and societal needs of communities, often becomes a flashpoint in conflicts. Essential systems like water, energy, and transportation are not just physical assets; they represent broader social, economic, and political structures that can be either symbols of progress or points of contention. When these vital infrastructures are disrupted or commandeered, it can magnify existing societal disparities, restrict access to essential services, and further entrench divisions. However, with thoughtful planning and sensitivity to the local context, these projects can promote peace, address inequalities, and enhance social cohesion. Success in such endeavors often hinges on navigating uncertain political landscapes, adapting to evolving regulatory frameworks, and understanding potential regional complexities.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">ECOSYSTEMS AND ECOSYSTEM SERVICES</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: InfrastruSummary: Implementing Ecosystem and Ecosystem Services (EES) projects in Fragile and Conflict-affected Settings (FCS) poses both operational challenges and the risk of inadvertently aggravating socio-political dynamics. The intertwined relationship between human, ecological, and economic systems makes these projects sensitive to conflict dynamics related to land access, environmental degradation, and livelihoods. Changes in ecosystems can be exploited by groups like political elites or armed entities, as observed in numerous case studies. Addressing ecosystem degradation offers opportunities for peace-promoting actions, including intercommunal dialogue. Despite their importance, ecosystem services are often undervalued by decision-makers, risking economic and social resilience. The guidance report further details the operational risks projects may face in FCS and emphasizes the importance of inclusive governance and conflict sensitivity.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">ENERGY GENERATION AND ACCESS</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: InfraSummary: Energy plays a key role in human activities, driving economies and societies worldwide. Notably, 85 percent of the 800 million people without energy access live in fragile states. With the growing climate crisis and the need to move away from fossil fuels, investments in renewable energy are increasing, especially in Africa due to its vast renewable energy potential. However, there are challenges in introducing renewable energy projects in Fragile and Conflict-affected States (FCS). The rising demand for minerals like cobalt and lithium, essential for renewable technologies, has led to increased conflict and human rights issues since many of these minerals are found in FCS. Large areas of land needed for renewable infrastructure can also lead to disputes, especially in regions with weak governance. But, when managed correctly, renewable energy can promote peace, offering decentralized power systems that benefit remote communities, improve socio-economic outcomes, and encourage collaboration between various stakeholders.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">TRANSPORT</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: InfraSuSummary: Transport-related projects in Fragile and Conflict-affected Settings (FCS) encounter operational risks and challenges and have the potential to ignore and/or exacerbate peace and conflict dynamics by affecting the interplay of social, political, economic, cultural, and environmental factors that drive fragility, conflict, and violence. Being insufficiently aware of the conflict dynamics may inadvertently contribute to conflict and undermine the achievement of the project’s goals, as well as undermining its potential to contribute to peace and stability. For example, people living in rural areas are highly dependent on transportation to access markets in larger cities, and any changes in transport methods, whether related to conflict or projects interventions, carry a risk of disruption. Yet opportunities exist for projects to enhance trade links through improved transport thus contributing to better economic opportunities for rural producers.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 7 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">BUILDINGS, CITIES, INDUSTRIES, AND APPLIANCES</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: In Fragile and Conflict-affected Settings (FCS), projects related to buildings, cities, industries, and appliances face multifaceted operational risks. These initiatives, when not judiciously managed, risk heightening tensions by influencing the delicate balance of socio-economic and political factors, thereby amplifying fragility, conflict, and violence. Such challenges are further compounded by weak governance structures, leading to heightened risks of violence and marginalization. Nevertheless, certain urban regions demonstrate remarkable resilience, underscoring the pivotal role of effective governance and cohesive community practices. This guidance note emphasizes the importance of understanding and addressing conflict dynamics to ensure the success and positive impact of GCF projects in urban settings.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 8 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal" style="font-size: 2rem;">&times;</div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="text-uppercase">FORESTS AND LAND USE</h3>
+                                    <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
+                                    <p style="text-align: justify;">Summary: Land has historically been a focal point of conflict, especially in Fragile and Conflict-affected Settings (FCS), where disputes over forests and land use often intersect with broader socio-political dynamics, including unfair resource allocation, marginalization, and governance challenges. Factors such as climate change, population growth, and urbanization are anticipated to intensify these conflicts in the coming decades. While projects related to forests and land use aim to address these challenges, they can inadvertently exacerbate tensions, especially if they limit resource access, have weak governance, or marginalize local stakeholders. However, with a conflict-sensitive approach, such projects can promote peace by ensuring equitable land access, fostering sustainable resource management, solidifying land rights, and building trust through community engagement and knowledge-sharing.</p>
+                                    <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Read the guidance note
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+</html>
