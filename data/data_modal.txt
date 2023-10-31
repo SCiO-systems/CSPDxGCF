@@ -1,0 +1,28 @@
+<p style="text-align: left;"><strong>Data on conflict events and fatalities:</strong></p>
+<ul style="text-align: left;">
+<li>Source: Armed Conflict Location &amp; Event Data Project (ACLED); <a href="https://www.acleddata.com">https://www.acleddata.com</a>.</li>
+<li>Data type accessed: battles, riots, explosions/remote violence, violence against civilians, strategic developments.</li>
+<li>Countries: Non-Annex I countries (excluding Marshall Islands, Palau, Tuvalu, Andorra, Cook Islands, San Marino)</li>
+<li>Timeframe: January 2019 to September 2023.</li>
+<li>Data accessed: 20 October 2023.</li>
+<li>Data manipulation: the data was aggregated by country.</li>
+</ul>
+<p style="text-align: left;"><strong>Data on Sectorial Conflict Drivers:</strong></p>
+<ul style="text-align: left;">
+<li>Source: Armed Conflict Location &amp; Event Data Project (ACLED); <a href="https://www.acleddata.com.">https://www.acleddata.com. </a></li>
+<li>Data type accessed: battles, riots, explosions/remote violence, violence against civilians, strategic developments.</li>
+<li>Countries: Non-Annex I countries (excluding Marshall Islands, Palau, Tuvalu, Andorra, Cook Islands, San Marino).</li>
+<li>Timeframe: January 2019 to September 2023.</li>
+<li>Data accessed: 20 October 2023.</li>
+<li>Data manipulation: the data was analyzed with an autometed content analysis (see methdology paper) to identify ACLED events that have conflict drivers relating to the GCF sectors of investment.</li>
+</ul>
+<p style="text-align: left;"><strong>Conflict Risk:</strong></p>
+<ul style="text-align: left;">
+<li>Source: INFORM Risk Index; <a href="https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk">https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk</a></li>
+<li>&nbsp;Data type accessed: Human, Development &amp; Deprivation, Inequality, Uprooted people, Institutional.</li>
+<li>Countries: Non-Annex I countries (excluding Marshall Islands, Palau, Tuvalu, Andorra, Cook Islands, San Marino).</li>
+<li>Dataset version: v67.</li>
+<li>Data accessed: 20 October 2023.</li>
+<li>Data manipulation: conflict risk was derived from INFORM's 'human' data category; socio-economic risk was derived from INFORM's 'Development &amp; Deprivation', 'Inequality', 'Uprooted people' categories; Institutional risk was derived from INFORM's 'Institutional' category (see methdology paper for more information).</li>
+</ul>
+<p style="text-align: left;">Methodology: <br />CSPDxGCF methodology is oulined at the following methodological report: [insert link]</p>
