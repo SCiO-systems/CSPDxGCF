@@ -55,13 +55,21 @@ def home():
 @app.route('/step1', methods=['GET', 'POST'])
 def step1():
     if request.method == 'POST':
-        # Store all form data in the session
+        # Clear previous sector selections
+        for i in range(1, 11):
+            session.pop(f'Sector_{i}', None)
+        
+        # Store new form data in the session
         for key in request.form:
             session[key] = request.form.get(key)
 
         # Redirect to the risk profile page
         return redirect(url_for('step2'))
     else:
+        # Clear previous sector selections when loading the page
+        for i in range(1, 11):
+            session.pop(f'Sector_{i}', None)
+        
         return render_template('step1.html')
 
 # Second step of the CSPD Dashboard (input 2: survey on project design)    
