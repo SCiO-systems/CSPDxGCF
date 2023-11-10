@@ -1,0 +1,5 @@
+flask==3.0.0
+pandas==2.1.2
+folium==0.14.0
+geopandas==0.14.0
+gunicorn==20.1.0
