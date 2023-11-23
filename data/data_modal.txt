@@ -25,4 +25,4 @@
 <li>Data accessed: 20 October 2023.</li>
 <li>Data manipulation: conflict risk was derived from INFORM's 'human' data category; socio-economic risk was derived from INFORM's 'Development &amp; Deprivation', 'Inequality', 'Uprooted people' categories; Institutional risk was derived from INFORM's 'Institutional' category (see methdology paper for more information).</li>
 </ul>
-<p style="text-align: left;">Methodology: <br />CSPDxGCF methodology is oulined at the following methodological report: [insert link]</p>
+<p style="text-align: left;">Methodology: <br />CSPDxCF methodology is oulined at the following methodological report: [insert link]</p>

@@ -52,7 +52,7 @@
                                             <div class="flex-shrink-0"><i class="bi bi-1-circle text-primary fs-1"></i></div>
                                             <div class="ms-4">
                                                 <p class="mb-1">Input 1: Project Information</p>
-                                                <div class="small text-muted">Provide basic information, such as project location and GCF Results Areas.</div>
+                                                <div class="small text-muted">Provide basic information, such as project location and sector of investment.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                             <div class="flex-shrink-0"><i class="bi bi-3-circle text-primary fs-1"></i></div>
                                             <div class="ms-4">
                                                 <p class="mb-1">Output A: Project Profile</p>
-                                                <div class="small text-muted">Using the information you provided, we compare your project's exposure to security risks with its levels of conflict sensitivity and establish if you need to take further actions.</div>
+                                                <div class="small text-muted">Using the information you provided, we compare your project's exposure to security risks with its levels of conflict sensitivity and assess your readiness.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -98,9 +98,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="container px-4 my-4 px-4">
-                            <p style="text-align: justify;">Welcome to the Climate Security Programming Dashboard for the Green Climate Fund (CSPDxGCF). Before delving deep into the dashboard, it's essential to familiarize yourself with the tools and resources available. Begin by exploring the 'About' section to understand the rationale, goals, and mission behind this platform. Following that, we highly recommend watching our step-by-step tutorial, which will equip you with the know-how to navigate the dashboard effectively. To comprehend the science and data behind this tool, check out our methodological paper, offering a deep dive into the framework and methodology that powers this platform.</p>
-                            <p style="text-align: justify;">Note that the insights and recommendations provided by the CSPDxGCF are for guidance and informational purposes. While we've made every effort to maintain data accuracy, the CGIAR System Organization assume no responsibility for any discrepancies or outcomes arising from the dashboard's usage. We urge users to apply discretion and due diligence when actioning any proposed strategies.</p>
-                        </div>
+                            <p style="text-align: justify;">Welcome to the Climate Security Programming Dashboard for Climate Finance (CSPDxCF). Before starting your project assessment, it is essential to familiarize yourself with the tools and resources available. Begin by exploring the '<a href="{{ url_for('about') }}">About</a>' section to understand the rationale, goals, and use cases of the platform. Following that, we highly recommend watching our step-by-step tutorial, which will equip you with the know-how to navigate the dashboard effectively. To comprehend the science and data behind this tool, check out our methodological paper, offering a deep dive into the framework and methodology that powers this platform.</p>
+                            <p style="text-align: justify;">The insights and recommendations provided by the CSPDxCF are for guidance and informational purposes. The dahsboard does not include live data and is updated twice a year. Check the data button to see the date of the latest release. While we've made every effort to maintain data accuracy, the CGIAR System Organization assume no responsibility for any discrepancies or outcomes arising from the dashboard's usage. We urge users to apply discretion and due diligence when actioning any proposed strategies.</p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                             <a class="btn btn-outline-primary btn-lx px-4 me-sm-3" href="{{ url_for('intro') }}">Methodology</a>
                             <a class="btn btn-outline-primary btn-lx px-4 me-sm-3" href="#" data-bs-toggle="modal" data-bs-target="#dataModal">Data</a>
@@ -168,13 +167,12 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h3 class="text-uppercase">CSPDxGCF Tutorial</h3>
+                                    <h3 class="text-uppercase">CSPDxCF Tutorial</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <div style="padding:80% 0 0 0;position:relative;">
-                                                <iframe src="https://player.vimeo.com/video/828236547" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                                <iframe src="https://www.youtube.com/embed/Uzw70xhxpfk" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                                             </div>
-                                            <script src="https://player.vimeo.com/api/player.js"></script>
                                         </div>
                                     </div>
                                 </div>

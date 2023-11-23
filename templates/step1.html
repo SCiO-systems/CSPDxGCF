@@ -16,7 +16,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">CSPDxGCF</a>
+                <a class="navbar-brand">CSPDxCF</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -33,7 +33,14 @@
                 <div class="text-left mb-3">
                     <h1 class="text-center fw-bolder mb-4">Input 1: Project Characteristics</h1>
                     <form action="/step1" method="post">
-                        <label for="country">Select the country of project implementation:</label>
+                        
+                        <label for="fund">1. Are you designing a project for the Green Climate Fund? </label><br>
+                        <select name="fund" id="fund" required>
+                            <option value='GCF'>Yes</option>
+                            <option value='all'>No</option>
+                        </select><br><br>
+
+                        <label for="country">2. Select the country of project implementation: </label><br>
                         <select name="country" id="country" required>
                             <option value='AFG'>Afghanistan</option>
                             <option value='ALB'>Albania</option>
@@ -183,10 +190,9 @@
                             <option value='YEM'>Yemen</option>
                             <option value='ZMB'>Zambia</option>
                             <option value='ZWE'>Zimbabwe</option>
-                        </select><br><br><br>
-
+                        </select><br><br>
                         
-                        <label>Select the GCF results areas that apply to your project:</label>
+                        <label>3. Select the sectors of investment that apply to your project:</label>
                         <div>
                             <input type="checkbox" id="Sector_1" name="Sector_1" value="true">
                             <label for="Sector_1" style="font-weight: normal;">Health Sector</label>

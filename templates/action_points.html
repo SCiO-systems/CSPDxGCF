@@ -19,7 +19,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">CSPDxGCF</a>
+                <a class="navbar-brand">CSPDxCF</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -35,7 +35,7 @@
                 <div class="text-left mb-1">
                     <h1 class="text-center fw-bolder ">Output 2: Action Points and Guidance</h1>
                     <br />
-                    <p style="text-align:justify">This section provides a set of Action Points for Climate Security Programming, offering strategies and recommendations specifically tailored to different project design characteristics and investment sectors. These strategies are centered around three main goals: reducing security risks, ensuring no harm comes from operations, and promoting peace and stability. Users are encouraged to learn more about these action points by clicking on them. Additional programmatic guidance, specific to different sectors of investment, is also available in the briefs provided below. The action points and briefs are intended to serve as heuristic tools, aiding in the continuous development and refinement of integrated climate security programming in GCF projects.</p>
+                    <p style="text-align: justify;">This section provides a set of action points for climate security programming, offering strategies and recommendations specifically tailored to different project design characteristics and investment sectors. These strategies are centered around three main goals: reducing security risks, ensuring no harm comes from operations, and promoting peace and stability. Users are encouraged to learn more about these action points by clicking on them. Additional programmatic guidance, specific to different sectors of investment, is also available for selected IFIs and Funds that have additional CSPD modules. The action points and briefs are intended to serve as heuristic tools, aiding in the continuous development and refinement of integrated climate security programming.</p>
                 </div>
             </div>
         </section>
@@ -349,101 +349,111 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 border-bottom">
-            <div class="container px-5 my-1 px-5 col-lg-8 justify-content-center">
-                <div class="text-left mb-3">    
-                    <h3 class="text-center fw-bolder mb-4">Thematic Guidance Notes</h3>
-                    <p style="text-align:justify">The “Guidance Notes for Peace-Informed Programming in the Green Climate Fund” is a thematic series published by CGIAR in partnership with Interpeace. The series consists of eight briefs that provide sectoral risk analyses and guidance tailored to the Green Climate Fund's Result Areas. The briefs that apply to your project are the following:</p>
-                
-                    {% if user_data['Sector_1'] or user_data['Sector_2'] or user_data['Sector_3'] %}
-                    <a href="#portfolioModal1" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-droplet" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Health, Food, Water&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>  
-                    {% endif %}
 
-                    {% if user_data['Sector_4'] %}
-                    <a href="#portfolioModal3" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-sign-turn-slight-right" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Infrastructure and Built Environment&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>  
-                    {% endif %}
-
-                    {% if user_data['Sector_5'] %}
-                    <a href="#portfolioModal2" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-cash-coin" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Livelihoods&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>
-                    {% endif %}
-
-                    {% if user_data['Sector_6'] %}
-                    <a href="#portfolioModal4" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-globe-asia-australia" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Ecosystems&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>
-                    {% endif %}
-
-                    {% if user_data['Sector_7'] %}
-                    <a href="#portfolioModal5" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-lightbulb" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Energy&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>
-                    {% endif %}
-
-                    {% if user_data['Sector_8'] %}
-                    <a href="#portfolioModal7" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-buildings" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Buildings, Cities, Industries&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>
-                    {% endif %}
+        {% if user_data['fund'] == 'GCF' %}
+            <section class="py-5 border-bottom">
+                <div class="container px-5 my-1 px-5 col-lg-8 justify-content-center">
+                    <div class="text-left mb-3">    
+                        <h3 class="text-center fw-bolder mb-4">Green Climate Fund Module</h3>
+                        <p style="text-align:justify">The “Guidance Notes for Peace-Informed Programming in the Green Climate Fund” is a thematic series published by CGIAR in partnership with Interpeace. The series consists of eight briefs that provide sectoral risk analyses and guidance tailored to the Green Climate Fund's Result Areas. The brief that apply to your project are the following:</p>
                     
-                    {% if user_data['Sector_9'] %}
-                    <a href="#portfolioModal6" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-bicycle" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Transport&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>
-                    {% endif %}
+                        {% if user_data['Sector_1'] or user_data['Sector_2'] or user_data['Sector_3'] %}
+                        <a href="#portfolioModal1" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-droplet" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Health, Food, Water&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>  
+                        {% endif %}
 
-                    {% if user_data['Sector_10'] %}
-                    <a href="#portfolioModal8" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
-                        <p class="mainr center-icon">
-                            <i class="bi bi-tree" style="font-size: 2rem; cursor: pointer;"></i>
-                            &nbsp;&nbsp;Forest and Land Use&nbsp;
-                            <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
-                        </p>
-                    </a>
-                    {% endif %}
+                        {% if user_data['Sector_4'] %}
+                        <a href="#portfolioModal3" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-sign-turn-slight-right" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Infrastructure and Built Environment&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>  
+                        {% endif %}
+
+                        {% if user_data['Sector_5'] %}
+                        <a href="#portfolioModal2" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-cash-coin" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Livelihoods&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>
+                        {% endif %}
+
+                        {% if user_data['Sector_6'] %}
+                        <a href="#portfolioModal4" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-globe-asia-australia" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Ecosystems&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>
+                        {% endif %}
+
+                        {% if user_data['Sector_7'] %}
+                        <a href="#portfolioModal5" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-lightbulb" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Energy&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>
+                        {% endif %}
+
+                        {% if user_data['Sector_8'] %}
+                        <a href="#portfolioModal7" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-buildings" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Buildings, Cities, Industries&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>
+                        {% endif %}
+                        
+                        {% if user_data['Sector_9'] %}
+                        <a href="#portfolioModal6" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-bicycle" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Transport&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>
+                        {% endif %}
+
+                        {% if user_data['Sector_10'] %}
+                        <a href="#portfolioModal8" data-bs-toggle="modal" style="text-decoration: none; color: inherit;">
+                            <p class="mainr center-icon">
+                                <i class="bi bi-tree" style="font-size: 2rem; cursor: pointer;"></i>
+                                &nbsp;&nbsp;Forest and Land Use&nbsp;
+                                <i class="bi  bi-link-45deg" style="font-size: 1rem; "></i>
+                            </p>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>            
+            </section>
+        {% endif %}
+
+        <section class="py-3">
+            <div class="container px-1 my-1 px-5 col-lg-8 justify-content-center">
+                <div class="text-left mb-1">
+                    <p style="text-align: justify;">Thank you for completing the assessment. We hope it provided valuable insights tailored to your specific needs. If you have any further questions, recommendations, or require detailed guidance on implementing the strategies, please don't hesitate to reach out to us.</p>
                 </div>
-            </div>            
+            </div>
         </section>
 
         <section class="py-2 border-bottom">
-            <div class="container px-2 my-3 px-2">
+            <div class="container px-1 my-2 px-2">
                 <div class="d-flex flex-column align-items-center my-5">
-                    <p style="text-align: justify;">Thank you for completing the assessment. We hope it provided valuable insights tailored to your specific needs and sectors. If you have any further questions or require detailed guidance on implementing the strategies, please don't hesitate to reach out to us.</p>
                     <a class="btn btn-outline-primary btn-lg px-4 me-sm-3" href="{{ url_for('contact') }}">Contact</a>
-                    
+                    <br>
 
                     <section class="logos-section">
                         <img src="/static/images/alliance.png" alt="Alliance Logo" class="logo">
@@ -492,7 +502,7 @@
                                             <p style="text-align:justify">Considering the (sometimes complex) interactions between the impacts of climate change and conflict is particularly important in an area vulnerable to climate change and affected by underlying tensions, whether they are rooted in ethnic, economic, linguistic or social differences. The impacts of climate change can worsen these dividing lines, risking the smooth implementation of project activities. In addition, projects can sometimes unintentionally make the situation worse if the project is &lsquo;blind&rsquo; to those conflict drivers. But equally, being aware of the conflict drivers enables the project to have a &lsquo;peace-positive&rsquo; impact.</p>
                                             <p style="text-align:justify">A conflict assessment (or a climate-conflict assessment) is an important first step to understand the underlying drivers of conflict in your project area, to anticipate problems, to ensure your project is not making them worse, and to develop &lsquo;peace-positive&rsquo; solutions. Using a conflict &lsquo;lens&rsquo; is an important way to think through the risks of the project being derailed by, or adding to, conflict. It can be done as a part of the broad socioeconomic risk assessment, or as a separate, additional exercise.</p>
                                             <p style="text-align:justify">The process of developing your conflict assessment can be as important as the product itself. It is an opportunity to engage with your stakeholders to better understand their needs and concerns. It is also a chance to involve as many of the project team as possible to raise their awareness of the political and social dynamics in the project area. The conflict assessment should be a &lsquo;living document&rsquo; &ndash; something that you can come back to and use time and again as the project evolves.</p>
-                                            <p style="text-align:justify">The conflict assessment should contain the following elements, depending on the needs of your specific project. First, you can use the assessment already done under the climate rationale on the current and projected climate impacts to assess the coping and adaptation capacity and how the project may affect conflict dynamics in the project area. Second, you can build on the mapping of the social and environmental dynamics around the natural resources affected by the project (e.g. land, water, energy) as part of the GCF ESS and IPP policy to forecast how the project might/ will change access, control and use of those resources. Finally, as part of the GCF Consultation and Stakeholder engagement plan mandatory annex requirement, it will be key to assess the stakeholders who will be affected by the project, how and to what extent.</p>
+                                            <p style="text-align: justify;">The conflict assessment should contain the following elements, depending on the needs of your specific project. First, you can use the assessment already done under the climate rationale on the current and projected climate impacts to assess the coping and adaptation capacity and how the project may affect conflict dynamics in the project area. Second, you can build on the mapping of the social and environmental dynamics around the natural resources affected by the project (e.g. land, water, energy) to forecast how the project might/ will change access, control and use of those resources. Finally, it will be key to assess the stakeholders who will be affected by the project, how and to what extent.</p>
                                             <p style="text-align:justify">The conflict assessment needs to:</p>
                                             <ul>
                                                 <li>
@@ -569,7 +579,7 @@
                                         <div>
                                             <p style="text-align:justify">Considering the (sometimes complex) interactions between the impacts of climate change and conflict is particularly important in an area vulnerable to climate change and affected by underlying tensions, whether they are rooted in ethnic, economic, linguistic or social differences.</p>
                                             <p style="text-align:justify">The impacts of climate change can worsen these dividing lines, risking the smooth implementation of project activities. In addition, projects can sometimes unintentionally make the situation worse if the project is &lsquo;blind&rsquo; to those conflict drivers. But equally, being aware of the conflict drivers enables the project to have a &lsquo;peace-positive&rsquo; impact.</p>
-                                            <p style="text-align:justify">The conflict assessment should contain the following elements, depending on the needs of your specific project. First, you can use the assessment already done under the climate rationale on the current and projected climate impacts to assess the coping and adaptation capacity and how the project may affect conflict dynamics in the project area. Second, you can build on the mapping of the social and environmental dynamics around the natural resources affected by the project (e.g. land, water, energy) as part of the GCF ESS and IPP policy to forecast how the project might/ will change access, control and use of those resources. Finally, as part of the GCF Consultation and Stakeholder engagement plan mandatory annex requirement, it will be key to assess the stakeholders who will be affected by the project, how and to what extent.</p>
+                                            <p style="text-align: justify;">The conflict assessment should contain the following elements, depending on the needs of your specific project. First, you can use the assessment already done under the climate rationale on the current and projected climate impacts to assess the coping and adaptation capacity and how the project may affect conflict dynamics in the project area. Second, you can build on the mapping of the social and environmental dynamics around the natural resources affected by the project (e.g. land, water, energy) to forecast how the project might/ will change access, control and use of those resources. Finally, it will be key to assess the stakeholders who will be affected by the project, how and to what extent.</p>
                                             <p><u>Further reading:</u></p>
                                             <p>1/. A concise overview of the conceptual links between climate change and security can be found in the 2020 <a href="https://dppa.un.org/en/climate-security-mechanism-toolbox-conceptual-approach" style="color:blue; text-decoration:underline">UN Conceptual Approach to Integrated Climate-Related Security Risk Assessments</a> from the UN&rsquo;s Climate Security Mechanism.</p>
                                             <p>2/. A more extensive literature review of the intersections between climate change and conflict can be found in <a href="https://doi.org/10.1093/isr/viaa064" style="color:blue; text-decoration:underline">this peer-reviewed article</a> published by International Perspectives.</p>
@@ -601,8 +611,7 @@
                                         <div>
                                             <p style="text-align:justify">Considering how stakeholders can participate in, benefit from, and be empowered by the project is a critical part of designing a successful, impactful project. This is particularly important for sometimes marginalised groups that may otherwise be left out of the design or implementation of projects. Examples of these groups include women, youth, older people, minorities, and the disabled.</p>
                                             <p style="text-align:justify">Involving these stakeholders in the production of a conflict assessment is essential to ensuring that the project includes mechanisms to ensure the full participation of these groups in the project and anticipates potential conflict issues that could derail the project, ensures that the project does no harm by exacerbating underlying causes of tension, and maximises the opportunities to support peace in the project area.</p>
-                                            <p style="text-align:justify">Stakeholder engagement is a key component of the Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a> that applies to all activities financed by the GCF, and to both private and public sector accredited entities.&nbsp;Requiring AEs to establish meaningful consultation and engagement processes is a strategic priority embedded in the environmental and social management system for GCF and the environmental and social safeguards, Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a>, Updated <a href="https://www.greenclimate.fund/document/gender-policy">Gender Policy</a> and <a href="https://www.greenclimate.fund/document/indigenous-peoples-policy">Indigenous Peoples Policy</a>.</p>
-                                            <p style="text-align:justify">The production of the assessment itself is an opportunity to engage with your stakeholders to better understand their needs and concerns. It can help to understand how the project can play a role to improve general awareness of people&#39;s rights and responsibilities over the natural resources involved in the project (forests, water, land, etc.). It may also be helpful to assess perceptions of the project and potential negative effects of resource allocation (whether verified or perceived), and the perception of RAFT (Respect, Accountability, Fairness and Transparency) on the part of beneficiaries.</p>
+                                            <p style="text-align: justify;">In some funds, like the Green Climate Fund, stakeholder engagement is a key component of the Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a> that applies to all activities financed by the GCF, and to both private and public sector accredited entities. Indeed, requiring accredited and direct acccess entities to establish meaningful consultation and engagement processes is a strategic priority embedded in the environmental and social management system for GCF and the environmental and social safeguards, Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a>, Updated <a href="https://www.greenclimate.fund/document/gender-policy">Gender Policy</a> and <a href="https://www.greenclimate.fund/document/indigenous-peoples-policy">Indigenous Peoples Policy</a>.</p>                                            <p style="text-align:justify">The production of the assessment itself is an opportunity to engage with your stakeholders to better understand their needs and concerns. It can help to understand how the project can play a role to improve general awareness of people&#39;s rights and responsibilities over the natural resources involved in the project (forests, water, land, etc.). It may also be helpful to assess perceptions of the project and potential negative effects of resource allocation (whether verified or perceived), and the perception of RAFT (Respect, Accountability, Fairness and Transparency) on the part of beneficiaries.</p>
                                             <p><u>Further reading:</u></p>
                                             <p>1/. GCF <a href="https://www.greenclimate.fund/document/sustainability-guidance-note-designing-and-ensuring-meaningful-stakeholder-engagement-gcf">Sustainability guidance note: Designing and ensuring meaningful stakeholder engagement on GCF-financed projects</a></p>
                                             <p>2/. <a href="https://www.cdacollaborative.org/wp-content/uploads/2022/03/Final_Conflict-Sensitivity-in-Land-Governance_March-30.pdf">CDA (2022) Conflict sensitivity in land governance</a> &ndash; provides a useful guide on how to implement conflict sensitivity in one domain (land) with tools and guidance that are relevant across many domains</p>
@@ -667,7 +676,7 @@
                                                 <p style="text-align:justify"><strong>Lines of communication with local authorities and security forces: </strong>In medium and high-risk contexts it is particularly important to establish lines of communication with local authorities and security forces over potential security-related threats to the project, beneficiaries, partners or staff (e.g. kidnapping, extortion etc) before they happen. If necessary, list potential mechanisms for engagement with armed groups, in the implementation arrangement, stakeholder engagement plan as well as one of the mitigation measures in the Risk Management and mitigation measures section of the funding proposal.</p>
                                                 </li>
                                                 <li>
-                                                <p style="text-align:justify"><strong>Staff safety: </strong>The safety of staff, partners and beneficiaries is a primary concern. While drafting the conflict assessment for the annex, you should conduct a gender and social inclusion analysis in line with the objectives of the GCF&rsquo;s <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Gender Policy</a> on how the conflict situation is specifically affecting women, girls, men, boys, other genders and gender identities. You should also ensure that the needs of female staff, partners and beneficiaries are fully reflected in staff training in conflict management, contingency plans and monitoring mechanisms.</p>
+                                                <p style="text-align: justify;"><strong>Staff safety: </strong>The safety of staff, partners and beneficiaries is a primary concern. While drafting the conflict assessment, you should conduct a gender and social inclusion analysis in line with the objectives of the IFF or climate fund (see for example the GCF <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Gender Policy)</a> on how the conflict situation is specifically affecting women, girls, men, boys, other genders and gender identities. You should also ensure that the needs of female staff, partners and beneficiaries are fully reflected in staff training in conflict management, contingency plans and monitoring mechanisms.</p>
                                                 </li>
                                                 <li>
                                                 <p style="text-align:justify"><strong>Monitoring systems for operational risks</strong>. During and after activities, it is key to monitor both operational risks, as well as the project&rsquo;s impacts on the security context. Monitoring should not hinder action but rather it should serve as a management tool to correct the course of action of the programme as and when needed. Pre-determined measures/ protocols for such monitoring help to ensure that sufficient attention is paid to ongoing &lsquo;horizon scanning&rsquo;. Data on the evolution and emergence of sources of tension and cohesion, changing dynamics that can impact the project, and the good implementation of conflict sensitivity measures is particularly relevant. During activities&rsquo; rollout, operational risks can be mitigated by robust early-warning systems for insecurity, engagement with arms carriers, and contingency funding for security-related delays.</p>
@@ -737,7 +746,7 @@
                                     <h3 class="text-uppercase">Safety and wellbeing of staff</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <p style="text-align:justify">The safety of staff and beneficiaries is a primary concern. While drafting the conflict assessment for the annex, you should conduct a gender and social inclusion analysis in line with the objectives of the GCF&rsquo;s <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Gender Policy</a> on how the conflict situation is specifically affecting women, girls, men, boys, other genders and gender identities. You should also ensure that the needs of female staff, partners and beneficiaries are fully reflected in staff training in conflict management, contingency plans, and monitoring mechanisms.</p>
+                                            <p style="text-align: justify;"><strong>Staff safety: </strong>The safety of staff, partners and beneficiaries is a primary concern. While drafting the conflict assessment, you should conduct a gender and social inclusion analysis in line with the objectives of the IFF or climate fund (see for example the GCF <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Gender Policy)</a> on how the conflict situation is specifically affecting women, girls, men, boys, other genders and gender identities. You should also ensure that the needs of female staff, partners and beneficiaries are fully reflected in staff training in conflict management, contingency plans and monitoring mechanisms.</p>
                                             <p><u>Further reading: </u></p>
                                             <p style="text-align:justify">1/. The International Association of Professionals in Humanitarian Assistance and Protection, provide useful links and resources for <a href="https://phap.org/theme-staff-safety">staff safety and security</a>.</p>
                                         </div>
@@ -987,10 +996,10 @@
                                             <p style="text-align:justify"><span style="background-color:white">Projects that fail to take account of underlying conflict dynamics can sometimes make the situation worse. This can happen in a number of ways, such as by ignoring or marginalising one segment of the population or by delivering project interventions that are seen to benefit one group more than another.&nbsp; It is important to put in place measures to address and mitigate any issues with project delivery as they arise. These could include: </span></p>
                                             <ul>
                                                 <li>
-                                                <p style="text-align:justify"><strong>A plan to manage stakeholder expectations</strong>: Stakeholder engagement is a key component of the Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a> that applies to all activities financed by the GCF, and to both private and public sector accredited entities.&nbsp;Requiring accredited entities (AEs) to establish meaningful consultation and engagement processes is a strategic priority embedded in the environmental and social management system for GCF and the environmental and social safeguards, Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a>, Updated <a href="https://www.greenclimate.fund/document/gender-policy">Gender Policy</a> and <a href="https://www.greenclimate.fund/document/indigenous-peoples-policy">Indigenous Peoples Policy</a>. While drafting the stakeholder engagement plan, you should design strategies to engage in active and open consultation with all stakeholders throughout the lifecycle of the project.</p>
+                                                <p style="text-align: justify;"><strong>A plan to manage stakeholder expectations</strong>: Stakeholder engagement is a key component project preparation. For example, the Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a> of the Green Climate Fund (GCF) applies to all activities financed by the GCF, and to both private and public sector accredited entities. In the case of the GCF, requiring accredited entities (AEs) to establish meaningful consultation and engagement processes is a strategic priority embedded in the environmental and social management system for GCF and the environmental and social safeguards, Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a>, Updated <a href="https://www.greenclimate.fund/document/gender-policy">Gender Policy</a> and <a href="https://www.greenclimate.fund/document/indigenous-peoples-policy">Indigenous Peoples Policy</a>. While drafting the stakeholder engagement plan, you should design strategies to engage in active and open consultation with all stakeholders throughout the lifecycle of the project.</p>
                                                 </li>
                                                 <li>
-                                                <p style="text-align:justify"><strong>Mechanisms of redress and conflict resolution: </strong>Credible mechanisms of mediation, conflict resolution and redress that are accessible to stakeholders are an important way to address complaints about the project before they rise to potentially explosive tensions. The GCF mandates the <a href="https://irm.greenclimate.fund/">Independent Redress Mechanism</a> which provides recourse to those affected by GCF programmes and projects. Projects can also create ad-hoc mechanisms for redress and conflict resolution as needed by the project, and involving local communities can ensure those mechanisms are appropriate to the needs of the project and the community.</p>
+                                                <p style="text-align: justify;"><strong>Mechanisms of redress and conflict resolution: </strong>Credible mechanisms of mediation, conflict resolution and redress that are accessible to stakeholders are an important way to address complaints about the project before they rise to potentially explosive tensions. For example, the GCF mandates the <a href="https://irm.greenclimate.fund/">Independent Redress Mechanism</a> which provides recourse to those affected by GCF programmes and projects. Projects can also create ad-hoc mechanisms for redress and conflict resolution as needed by the project, and involving local communities can ensure those mechanisms are appropriate to the needs of the project and the community.</p>
                                                 </li>
                                                 <li>
                                                 <p style="text-align:justify"><strong>Participatory approaches to design the allocation of funding: </strong>Ensuring transparency and stakeholder involvement, to the extent possible, in decisions about the project, including the allocation of funding, is an important part of building support for the project.</p>
@@ -1027,7 +1036,7 @@
                                     <h3 class="text-uppercase">Stakeholder expectations</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <p style="text-align:justify">Stakeholder engagement is a key element of the Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a> that applies to all activities financed by the GCF, and to both private and public sector accredited entities.&nbsp;Requiring accredited entities (AEs) to establish meaningful consultation and engagement processes is a strategic priority embedded in the environmental and social management system for GCF and the environmental and social safeguards, Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a>, Updated <a href="https://www.greenclimate.fund/document/gender-policy">Gender Policy</a> and <a href="https://www.greenclimate.fund/document/indigenous-peoples-policy">Indigenous Peoples Policy</a>. While drafting the stakeholder engagement plan, design strategies to engage in active and open consultation with all stakeholders throughout the lifecycle of the project. Periodic meetings can be useful to understand their needs, desires and concerns, as per the GCF Sustainability Guidance Note.</p>
+                                            <p style="text-align: justify;">Stakeholder engagement is a key component project preparation. For example, the Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a> of the Green Climate Fund (GCF) applies to all activities financed by the GCF, and to both private and public sector accredited entities. In the case of the GCF, requiring accredited entities (AEs) to establish meaningful consultation and engagement processes is a strategic priority embedded in the environmental and social management system for GCF and the environmental and social safeguards, Revised <a href="https://www.greenclimate.fund/document/environmental-and-social-policy">Environmental and Social Policy</a>, Updated <a href="https://www.greenclimate.fund/document/gender-policy">Gender Policy</a> and <a href="https://www.greenclimate.fund/document/indigenous-peoples-policy">Indigenous Peoples Policy</a>. While drafting the stakeholder engagement plan, you should design strategies to engage in active and open consultation with all stakeholders throughout the lifecycle of the project.</p>
                                             <p style="text-align:justify"><u>Further reading: </u></p>
                                             <p style="text-align:justify">1/. GCF <a href="https://www.greenclimate.fund/document/sustainability-guidance-note-designing-and-ensuring-meaningful-stakeholder-engagement-gcf">Sustainability guidance note: Designing and ensuring meaningful stakeholder engagement on GCF-financed projects</a></p>
                                             <p style="text-align:justify">2/. UN Habitat has developed a series of tools to <a href="https://www.local2030.org/library/99/Tools-to-Support-Transparency-in-Land-Administration.pdf">support transparency in land administration</a>, but these tools are also often applicable to other types of natural resources</p>
@@ -1054,7 +1063,7 @@
                                     <h3 class="text-uppercase">Redress and conflict resolution</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <p style="text-align:justify">Credible mechanisms of mediation, conflict resolution and redress that are accessible to stakeholders are an important way to address complaints about the project and its activities before they rise to becoming defined. The GCF mandates the <a href="https://irm.greenclimate.fund/">Independent Redress Mechanism</a> which provides recourse to those affected by GCF programmes and projects. Projects can also create ad-hoc mechanisms for redress and conflict resolution as needed by the project, and involving local communities can ensure those mechanisms are appropriate to the needs of the project and the community.</p>
+                                            <p style="text-align: justify;">Credible mechanisms of mediation, conflict resolution and redress that are accessible to stakeholders are an important way to address complaints about the project before they rise to potentially explosive tensions. For example, the GCF mandates the <a href="https://irm.greenclimate.fund/">Independent Redress Mechanism</a> which provides recourse to those affected by GCF programmes and projects. Projects can also create ad-hoc mechanisms for redress and conflict resolution as needed by the project, and involving local communities can ensure those mechanisms are appropriate to the needs of the project and the community.</p>
                                             <p style="text-align:justify"><u>Further reading: </u></p>
                                             <p style="text-align:justify">1/. GCF <a href="https://www.greenclimate.fund/document/sustainability-guidance-note-designing-and-ensuring-meaningful-stakeholder-engagement-gcf">Sustainability guidance note: Designing and ensuring meaningful stakeholder engagement on GCF-financed projects</a></p>
                                             <p style="text-align:justify">2/. The <a href="https://www.sida.se/en/for-partners/methods-materials/peace-and-conflict-toolbox">Peace and Conflict Toolbox</a> developed by Swedish International Development Cooperation Agency (SIDA) has a range of useful tools and information, as does this guide to <a href="https://www.umweltbundesamt.de/en/publikationen/guidelines-for-conflict-sensitive-adaptation-to-0">Conflict-sensitive Adaptation</a> produced by Umwelt Bundesamt (BMV, 2022).</p>
@@ -1135,23 +1144,19 @@
                                     <h3 class="text-uppercase">Contributions to peace and stability</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <p style="text-align:justify">GCF projects can and should go beyond conflict sensitivity (&lsquo;doing no harm&rsquo;) to actually being positive for peace. This means looking for ways in which the project can actively look to foster cooperation and communication between different groups that may have a history of tension and conflict, to support existing mechanisms to resolve grievances more effectively, and to encourage natural resource management systems that are inclusive, sustainable and just. &nbsp;There are a number of ways this can be done:</p>
+                                            <p style="text-align:justify">Climate adaptation and mitigation projects can and should go beyond conflict management (&lsquo;doing no harm&rsquo;) to actually being positive for peace. This means looking for ways in which the project can actively look to foster cooperation and communication between different groups that may have a history of tension and conflict, to support existing mechanisms to resolve grievances more effectively, and to encourage natural resource management systems that are inclusive, sustainable and just. &nbsp;There are a number of ways this can be done:</p>
                                             <ul>
                                                 <li>
-                                                <p style="text-align:justify"><strong>Set clear and measurable goals related to peace: </strong>The way to develop a project that is peace positive is to consider what the project can achieve at the outset, to set appropriate SMART (Specific, Measurable, Achievable, Relevant, and Time-bound)&nbsp;indicators, and to monitor the delivery of those indicators throughout the project. While drafting the funding proposal, include co-benefit(s) indicator(s) and target(s) on peace in the Theory of Change and outcome mapping of the GCF results areas and co-benefits sections, in line with the GCF <a href="https://www.greenclimate.fund/sites/default/files/document/irmf-policy.pdf">Integrated Results Management Framework policy</a>.</p>
-                                                </li>
+                                                <p style="text-align: justify;"><strong>Set clear and measurable goals related to peace: </strong>The way to develop a project that is peace positive is to consider what the project can achieve at the outset, to set appropriate SMART (Specific, Measurable, Achievable, Relevant, and Time-bound) indicators, and to monitor the delivery of those indicators throughout the project. For example, for projects in the Green Climate Fund, we would recomend&nbsp; to include co-benefit(s) indicator(s) and target(s) on peace in the Theory of Change and outcome mapping of the GCF results areas and co-benefits sections, in line with the GCF <a href="https://www.greenclimate.fund/sites/default/files/document/irmf-policy.pdf">Integrated Results Management Framework policy</a>.</p>                                                </li>
                                                 <li>
                                                 <p style="text-align:justify"><strong>Support employment and livelihoods for local communities: </strong>Projects setting up, for example, solar microgrids or similar renewable energy infrastructure can support livelihood diversification and provide economic opportunities for displaced populations and youth, especially in rural areas. This can involve training and capacity-building programs to develop skills related to energy entrepreneurship. By providing stable economic alternatives and more clean and accessible energy to communities, renewable energy interventions can also reduce the pressure on natural resources and the environment, thus contributing to more secure livelihoods for people and communities.</p>
                                                 </li>
                                                 <li>
-                                                <p style="text-align:justify"><strong>Consider the needs, preferences and concerns of women, youth and marginalised groups</strong> Every social grouping is different, with varied needs and differing challenges. It is important to conduct a gender and social inclusion analysis in line with the objectives of the GCF <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Gender Policy</a>. During the design and development of the project, ensure that community and indigenous groups are fully engaged. Have a strategic plan for their engagement during the lifecycle of the project/programme of the funding proposal as per the <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Sustainability Guidance Note</a>.</p>
-                                                </li>
+                                                <p style="text-align: justify;"><strong>Consider the needs, preferences and concerns of women, youth and marginalised groups</strong> Every social grouping is different, with varied needs and differing challenges. It is important to conduct a gender and social inclusion analysis in line with the objectives of the project. During the design and development of the project, ensure that community and indigenous groups are fully engaged. Have a strategic plan for their engagement during the lifecycle of the project/programme of the funding proposal.</p>                                                </li>
                                                 <li>
-                                                <p style="text-align:justify"><strong>Find opportunities to promote dialogue and build trust</strong>: GCF projects can bring different groups together in ways that promote dialogue and forge practical links among communities, so building trust between or among different groups. Using participatory approaches in the design and/ or implementation of the project can help tailor the project and its objectives to the target country.</p>
-                                                </li>
+                                                <p style="text-align: justify;"><strong>Find opportunities to promote dialogue and build trust</strong>: Climate finance projects can bring different groups together in ways that promote dialogue and forge practical links among communities, so building trust between or among different groups. Using participatory approaches in the design and/ or implementation of the project can help tailor the project and its objectives to the target country.</p>                                                </li>
                                                 <li>
-                                                <p style="text-align:justify"><strong>Look for opportunities to strengthen state-society relations or local institutions</strong>: GCF projects can help to improve relationships between state and local communities, and also support local institutions&rsquo; efforts for conflict prevention or resolution. To do so it is important to map during the project planning stage what structures and institutions exist and then work to include them in project consultations and implementation.</p>
-                                                </li>
+                                                <p style="text-align: justify;"><strong>Look for opportunities to strengthen state-society relations or local institutions</strong>: Climate finance projects can help to improve relationships between state and local communities, and also support local institutions&rsquo; efforts for conflict prevention or resolution. To do so it is important to map during the project planning stage what structures and institutions exist and then work to include them in project consultations and implementation.</p>                                                </li>
                                                 <li>
                                                 <p style="text-align:justify"><strong>Identify opportunities for dialogue and collaboration:</strong> It is important to foster partnerships with Civil Society Organisations (CSOs) to attempt to resolve such conflicts through peacebuilding actions, for example, by promoting regulatory frameworks and strong rule of law. Using participatory approaches in the development of project design and/or implementation can help tailoring the project and its objectives to the target country.</p>
                                                 </li>
@@ -1182,7 +1187,7 @@
                                     <div class="container" style="text-align: left;">
                                         <div>
                                             <p style="text-align:justify"><span>The most important starting point to developing a project that is peace positive is to consider what the project can achieve at the outset, to set appropriate SMART (Specific, Measurable, Achievable, Relevant, and Time-bound)&nbsp;indicators and to monitor the delivery of those indicators throughout the project. The</span>se indicators will depend on the context of the project but can revolve around incidents (such as the number of violent events), perceptions (how safe people feel), institutions (for example, whether there are local community groups established to resolve grievances), or processes (for example, how long and difficult it may be to resolve a land dispute through legal channels).</p>
-                                            <p style="text-align:justify"><span>While drafting the funding proposal, include co-benefit(s) indicator(s) and target(s) on peace in the Theory of Change and outcome mapping of the GCF results areas and co-benefits sections, in line with the GCF </span><a href="https://www.greenclimate.fund/sites/default/files/document/irmf-policy.pdf"><span style="color:#0563c1">Integrated Results Management Framework policy</span></a><span style="color:black">.</span></p>
+                                            <p style="text-align: justify;">While drafting the funding proposal, include co-benefit(s) indicator(s) and target(s) on peace in the Theory of Change and outcome mapping. </p>
                                             <p style="text-align:justify"><u><span>Further reading: </span></u></p>
                                             <p style="text-align:justify"><span>1/. UNEP (2022) </span><a href="https://wedocs.unep.org/20.500.11822/40330"><span style="color:#0563c1">Addressing Climate-related Security Risks: Conflict Sensitivity for Climate Change Adaptation and Sustainable Livelihoods</span></a><span style="color:black"> includes ideas and approaches to monitoring and evaluation</span></p>
                                             <p style="text-align:justify">2/. <a href="https://www.visionofhumanity.org/chart-of-the-week-indicators-of-peace/"><span style="color:#1155cc">The Global Peace Index: Exploring 23 indicators for peace</span></a></p>
@@ -1235,7 +1240,7 @@
                                     <h3 class="text-uppercase">Women, youth and marginalized groups</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <p style="text-align:justify">Every social grouping is different, with varied needs and challenges. While drafting the conflict assessment for the annex, it is important to conduct a gender and social inclusion analysis in line with the objectives of the GCF <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Gender Policy</a>. During the design and development of the project, ensure that community and indigenous groups are fully engaged. Have a strategic plan for their engagement during the lifecycle of the project/programme of the funding proposal as per the <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Sustainability Guidance Note</a>.</p>
+                                            <p style="text-align: justify;">Every social grouping is different, with varied needs and challenges. While drafting the conflict assessment for the annex, it is important to conduct a gender and social inclusion analysis in line with the objectives of project. During the design and development of the project, ensure that community and indigenous groups are fully engaged. In GCF projects, have a strategic plan for their engagement during the lifecycle of the project/programme of the funding proposal as per the <a href="https://www.greenclimate.fund/sites/default/files/document/gcf-gender-policy.pdf">Sustainability Guidance Note</a>.</p>
                                             <p style="text-align:justify"><u>Further reading:</u></p>
                                             <p style="text-align:justify">1/. OECD (2022) <a href="https://www.oecd.org/dac/development-finance-gender-climate-action.pdf">Development finance for gender-responsive climate action</a></p>
                                         </div>
@@ -1260,7 +1265,7 @@
                                     <h3 class="text-uppercase">Dialogue and Trust</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <p style="text-align:justify">GCF projects can bring different groups together in ways that promote dialogue and forge practical links among communities, so building trust between or among different groups. Using participatory approaches in the design and/ or implementation of the project can help tailor the project and its objectives to the target country.</p>
+                                            <p style="text-align:justify">Climate finance projects can bring different groups together in ways that promote dialogue and forge practical links among communities, so building trust between or among different groups. Using participatory approaches in the design and/ or implementation of the project can help tailor the project and its objectives to the target country.</p>
                                             <p style="text-align:justify">It is important to foster partnerships with Civil Society Organizations (CSOs) to attempt to promote peacebuilding. Using participatory approaches in the development of project design and/or implementation can help tailoring the project and its objectives to the target country.</p>
                                             <p style="text-align:justify">Projects can promote equal rights and address the gender gap and marginalisation in development by empowering otherwise marginalised groups to claim spaces in decision-making around and raise their voices therein and sensitising and supporting strong institutions, including traditional institutions, to be more inclusive This could start, for example, from working to achieve a better gender balance in community decision-making bodies for infrastructure planning. Also, where discriminatory customary practices are deeply embedded, a strategy could be to work with the least discriminatory institutions to at least try to change the status quo and to generate evidence and experience, and raise voices and confidence, for tackling or addressing other institutions.</p>
                                             <p style="text-align:justify"><u>Further reading:</u></p>
@@ -1289,7 +1294,7 @@
                                     <h3 class="text-uppercase">State-society relations</h3>
                                     <div class="container" style="text-align: left;">
                                         <div>
-                                            <p style="text-align:justify">GCF projects can help to improve relationships between state and local communities, and also support local institutions&rsquo; efforts for conflict prevention or resolution. To do so it is important to map during the project planning stage what structures and institutions exist and then work to include them in project consultations and implementation.</p>
+                                            <p style="text-align:justify">Climate finance projects can help to improve relationships between state and local communities, and also support local institutions&rsquo; efforts for conflict prevention or resolution. To do so it is important to map during the project planning stage what structures and institutions exist and then work to include them in project consultations and implementation.</p>
                                             <p style="text-align:justify"><u>Further reading:</u></p>
                                             <p style="text-align:justify">1/. The <a href="https://www.sida.se/en/for-partners/methods-materials/peace-and-conflict-toolbox">Peace and Conflict Toolbox</a> developed by Swedish International Development Cooperation Agency (SIDA) has a range of useful tools and information, as does this guide to <a href="https://www.umweltbundesamt.de/en/publikationen/guidelines-for-conflict-sensitive-adaptation-to-0">Conflict-sensitive Adaptation</a> produced by Umwelt Bundesamt (BMV, 2022).</p>
                                         </div>
@@ -1470,7 +1475,7 @@
                                     <!-- Project details-->
                                     <h3 class="text-uppercase">ECOSYSTEMS AND ECOSYSTEM SERVICES</h3>
                                     <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
-                                    <p style="text-align: justify;">Summary: InfrastruSummary: Implementing Ecosystem and Ecosystem Services (EES) projects in Fragile and Conflict-affected Settings (FCS) poses both operational challenges and the risk of inadvertently aggravating socio-political dynamics. The intertwined relationship between human, ecological, and economic systems makes these projects sensitive to conflict dynamics related to land access, environmental degradation, and livelihoods. Changes in ecosystems can be exploited by groups like political elites or armed entities, as observed in numerous case studies. Addressing ecosystem degradation offers opportunities for peace-promoting actions, including intercommunal dialogue. Despite their importance, ecosystem services are often undervalued by decision-makers, risking economic and social resilience. The guidance report further details the operational risks projects may face in FCS and emphasizes the importance of inclusive governance and conflict sensitivity.</p>
+                                    <p style="text-align: justify;">Summary: Implementing Ecosystem and Ecosystem Services (EES) projects in Fragile and Conflict-affected Settings (FCS) poses both operational challenges and the risk of inadvertently aggravating socio-political dynamics. The intertwined relationship between human, ecological, and economic systems makes these projects sensitive to conflict dynamics related to land access, environmental degradation, and livelihoods. Changes in ecosystems can be exploited by groups like political elites or armed entities, as observed in numerous case studies. Addressing ecosystem degradation offers opportunities for peace-promoting actions, including intercommunal dialogue. Despite their importance, ecosystem services are often undervalued by decision-makers, risking economic and social resilience. The guidance report further details the operational risks projects may face in FCS and emphasizes the importance of inclusive governance and conflict sensitivity.</p>
                                     <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
                                         <i class="fas fa-xmark me-1"></i>
                                         Read the guidance note
@@ -1494,7 +1499,7 @@
                                     <!-- Project details-->
                                     <h3 class="text-uppercase">ENERGY GENERATION AND ACCESS</h3>
                                     <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
-                                    <p style="text-align: justify;">Summary: InfraSummary: Energy plays a key role in human activities, driving economies and societies worldwide. Notably, 85 percent of the 800 million people without energy access live in fragile states. With the growing climate crisis and the need to move away from fossil fuels, investments in renewable energy are increasing, especially in Africa due to its vast renewable energy potential. However, there are challenges in introducing renewable energy projects in Fragile and Conflict-affected States (FCS). The rising demand for minerals like cobalt and lithium, essential for renewable technologies, has led to increased conflict and human rights issues since many of these minerals are found in FCS. Large areas of land needed for renewable infrastructure can also lead to disputes, especially in regions with weak governance. But, when managed correctly, renewable energy can promote peace, offering decentralized power systems that benefit remote communities, improve socio-economic outcomes, and encourage collaboration between various stakeholders.</p>
+                                    <p style="text-align: justify;">Summary: Energy plays a key role in human activities, driving economies and societies worldwide. Notably, 85 percent of the 800 million people without energy access live in fragile states. With the growing climate crisis and the need to move away from fossil fuels, investments in renewable energy are increasing, especially in Africa due to its vast renewable energy potential. However, there are challenges in introducing renewable energy projects in Fragile and Conflict-affected States (FCS). The rising demand for minerals like cobalt and lithium, essential for renewable technologies, has led to increased conflict and human rights issues since many of these minerals are found in FCS. Large areas of land needed for renewable infrastructure can also lead to disputes, especially in regions with weak governance. But, when managed correctly, renewable energy can promote peace, offering decentralized power systems that benefit remote communities, improve socio-economic outcomes, and encourage collaboration between various stakeholders.</p>
                                     <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
                                         <i class="fas fa-xmark me-1"></i>
                                         Read the guidance note
@@ -1518,7 +1523,7 @@
                                     <!-- Project details-->
                                     <h3 class="text-uppercase">TRANSPORT</h3>
                                     <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
-                                    <p style="text-align: justify;">Summary: InfraSuSummary: Transport-related projects in Fragile and Conflict-affected Settings (FCS) encounter operational risks and challenges and have the potential to ignore and/or exacerbate peace and conflict dynamics by affecting the interplay of social, political, economic, cultural, and environmental factors that drive fragility, conflict, and violence. Being insufficiently aware of the conflict dynamics may inadvertently contribute to conflict and undermine the achievement of the project’s goals, as well as undermining its potential to contribute to peace and stability. For example, people living in rural areas are highly dependent on transportation to access markets in larger cities, and any changes in transport methods, whether related to conflict or projects interventions, carry a risk of disruption. Yet opportunities exist for projects to enhance trade links through improved transport thus contributing to better economic opportunities for rural producers.</p>
+                                    <p style="text-align: justify;">Summary: Transport-related projects in Fragile and Conflict-affected Settings (FCS) encounter operational risks and challenges and have the potential to ignore and/or exacerbate peace and conflict dynamics by affecting the interplay of social, political, economic, cultural, and environmental factors that drive fragility, conflict, and violence. Being insufficiently aware of the conflict dynamics may inadvertently contribute to conflict and undermine the achievement of the project’s goals, as well as undermining its potential to contribute to peace and stability. For example, people living in rural areas are highly dependent on transportation to access markets in larger cities, and any changes in transport methods, whether related to conflict or projects interventions, carry a risk of disruption. Yet opportunities exist for projects to enhance trade links through improved transport thus contributing to better economic opportunities for rural producers.</p>
                                     <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
                                         <i class="fas fa-xmark me-1"></i>
                                         Read the guidance note
@@ -1542,7 +1547,7 @@
                                     <!-- Project details-->
                                     <h3 class="text-uppercase">BUILDINGS, CITIES, INDUSTRIES, AND APPLIANCES</h3>
                                     <p class="item-intro text-muted">Guidance Note for Peace-Informed Programming at the Green Climate Fund</p>
-                                    <p style="text-align: justify;">Summary: In Fragile and Conflict-affected Settings (FCS), projects related to buildings, cities, industries, and appliances face multifaceted operational risks. These initiatives, when not judiciously managed, risk heightening tensions by influencing the delicate balance of socio-economic and political factors, thereby amplifying fragility, conflict, and violence. Such challenges are further compounded by weak governance structures, leading to heightened risks of violence and marginalization. Nevertheless, certain urban regions demonstrate remarkable resilience, underscoring the pivotal role of effective governance and cohesive community practices. This guidance note emphasizes the importance of understanding and addressing conflict dynamics to ensure the success and positive impact of GCF projects in urban settings.</p>
+                                    <p style="text-align: justify;">Summary: In Fragile and Conflict-affected Settings (FCS), projects related to buildings, cities, industries, and appliances face multifaceted operational risks. These initiatives, when not judiciously managed, risk heightening tensions by influencing the delicate balance of socio-economic and political factors, thereby amplifying fragility, conflict, and violence. Such challenges are further compounded by weak governance structures, leading to heightened risks of violence and marginalization. Nevertheless, certain urban regions demonstrate remarkable resilience, underscoring the pivotal role of effective governance and cohesive community practices. This guidance note emphasizes the importance of understanding and addressing conflict dynamics to ensure the success and positive impact of climate finance projects in urban settings.</p>
                                     <a href="x" target="_blank" class="btn btn-primary btn-xl text-uppercase">
                                         <i class="fas fa-xmark me-1"></i>
                                         Read the guidance note
@@ -1813,7 +1818,7 @@
                                     <p style="text-align: justify;">Considering the (sometimes complex) interactions between the impacts of climate change and conflict is particularly important in an area vulnerable to climate change and affected by underlying tensions, whether they are rooted in ethnic, economic, linguistic or social differences. The impacts of climate change can worsen these dividing lines, risking the smooth implementation of project activities. In addition, projects can sometimes unintentionally make the situation worse if the project is &lsquo;blind&rsquo; to those conflict drivers. But equally, being aware of the conflict drivers enables the project to have a &lsquo;peace-positive&rsquo; impact.</p>
                                     <p style="text-align: justify;">A conflict assessment (or a climate-conflict assessment) is an important first step to understand the underlying drivers of conflict in your project area, to anticipate problems, to ensure your project is not making them worse, and to develop &lsquo;peace-positive&rsquo; solutions. Using a conflict &lsquo;lens&rsquo; is an important way to think through the risks of the project being derailed by, or adding to, conflict. It can be done as a part of the broad socioeconomic risk assessment, or as a separate, additional exercise.</p>
                                     <p style="text-align: justify;">The process of developing your conflict assessment can be as important as the product itself. It is an opportunity to engage with your stakeholders to better understand their needs and concerns. It is also a chance to involve as many of the project team as possible to raise their awareness of the political and social dynamics in the project area. The conflict assessment should be a &lsquo;living document&rsquo; &ndash; something that you can come back to and use time and again as the project evolves.</p>
-                                    <p style="text-align: justify;">The conflict assessment should contain the following elements, depending on the needs of your specific project. First, you can use the assessment already done under the climate rationale on the current and projected climate impacts to assess the coping and adaptation capacity and how the project may affect conflict dynamics in the project area. Second, you can build on the mapping of the social and environmental dynamics around the natural resources affected by the project (e.g. land, water, energy) as part of the GCF ESS and IPP policy to forecast how the project might/ will change access, control and use of those resources. Finally, as part of the GCF Consultation and Stakeholder engagement plan mandatory annex requirement, it will be key to assess the stakeholders who will be affected by the project, how and to what extent.</p>
+                                    <p style="text-align: justify;">The conflict assessment should contain the following elements, depending on the needs of your specific project. First, you can use the assessment already done under the climate rationale on the current and projected climate impacts to assess the coping and adaptation capacity and how the project may affect conflict dynamics in the project area. Second, you can build on the mapping of the social and environmental dynamics around the natural resources affected by the project (e.g. land, water, energy) as part of your compliance to ESS and Indigenous People's policies to forecast how the project might/ will change access, control and use of those resources. Finally, utilize your consultation and stakeholder engagement plans to assess who will be affected by the project, how and to what extent.</p>
                                     <p style="text-align: justify;">The conflict assessment needs to:</p>
                                     <ul>
                                     <li style="text-align: justify;"><strong>Involve local stakeholders: </strong>This is essential to ensuring that the project properly anticipates potential conflict issues that could derail the project, ensures that the project does no harm by exacerbating underlying causes of tension, and maximises the opportunities to support peace in the project area.</li>
