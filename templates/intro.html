@@ -14,7 +14,7 @@
     <body class="d-flex flex-column">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">CSPDxGCF</a>
+                <a class="navbar-brand" href="#!">CSPDxCF</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -99,9 +99,9 @@
                     <div class="col-lg-6">
                         <div class="container px-4 my-4 px-4">
                             <p style="text-align: justify;">Welcome to the Climate Security Programming Dashboard for Climate Finance (CSPDxCF). Before starting your project assessment, it is essential to familiarize yourself with the tools and resources available. Begin by exploring the '<a href="{{ url_for('about') }}">About</a>' section to understand the rationale, goals, and use cases of the platform. Following that, we highly recommend watching our step-by-step tutorial, which will equip you with the know-how to navigate the dashboard effectively. To comprehend the science and data behind this tool, check out our methodological paper, offering a deep dive into the framework and methodology that powers this platform.</p>
-                            <p style="text-align: justify;">The insights and recommendations provided by the CSPDxCF are for guidance and informational purposes. The dahsboard does not include live data and is updated twice a year. Check the data button to see the date of the latest release. While we've made every effort to maintain data accuracy, the CGIAR System Organization assume no responsibility for any discrepancies or outcomes arising from the dashboard's usage. We urge users to apply discretion and due diligence when actioning any proposed strategies.</p>
+                            <p style="text-align: justify;">The insights and recommendations provided by the CSPDxCF are for guidance and informational purposes. The dahsboard does not include live data and is updated once a year. Check the data button to see the date of the latest release. While we have made every effort to maintain data accuracy, the CGIAR System Organization assume no responsibility for any discrepancies or outcomes arising from the dashboard's usage. We urge users to apply discretion and due diligence when actioning any proposed strategies.</p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                            <a class="btn btn-outline-primary btn-lx px-4 me-sm-3" href="{{ url_for('intro') }}">Methodology</a>
+                            <a class="btn btn-outline-primary btn-lx px-4 me-sm-3" href="{{ url_for('data', filename='CSPD_Guidebook.pdf') }}" target="_blank">Methodology</a>
                             <a class="btn btn-outline-primary btn-lx px-4 me-sm-3" href="#" data-bs-toggle="modal" data-bs-target="#dataModal">Data</a>
                             <a class="btn btn-outline-primary btn-lx px-4 me-sm-3" href="#" data-bs-toggle="modal" data-bs-target="#tutorialModal">Tutorial</a>
                         </div>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
                 <div class="container px-3 my-3 px-3 d-flex justify-content-center align-items-center">
-                    <a href="{{ url_for('step1') }}" target="_blank" class="btn btn-primary btn-lg text-uppercase">
+                    <a href="{{ url_for('step1') }}" class="btn btn-primary btn-lg text-uppercase">
                         <i class="fas fa-xmark me-1"></i>
                         Assess Your Project
                     </a>
@@ -405,5 +405,20 @@
                 });
             });
         </script>
+
+        <script>
+            var modal = document.getElementById('tutorialModal');
+            var iframe = modal.querySelector('iframe');
+            var savedSrc = iframe.src; // Save the original src when the page loads
+
+            modal.addEventListener('show.bs.modal', function () {
+                iframe.src = savedSrc; // Reassign the src when the modal is opened
+            });
+
+            modal.addEventListener('hide.bs.modal', function () {
+                iframe.src = ''; // Reset the src when the modal is closed
+            });
+        </script>
+
     </body>
 </html>

@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session
+from flask import send_from_directory
 import pandas as pd
 import folium
 from folium.plugins import HeatMap
@@ -33,8 +34,12 @@ def intro():
 @app.route('/about')
 def about():
     with open("data/data_modal.txt", "r") as f:
-        data_modal = f.read() 
+        data_modal = f.read()
     return render_template('about.html', data_modal=data_modal)
+
+@app.route('/data/<filename>')
+def data(filename):
+    return send_from_directory('data', filename)
 
 # 'Knowledge Hub' page in the CSPD Website
 @app.route('/knowledgehub')
