@@ -53,11 +53,11 @@
                     {% endif %}
     
                     {% if user_data['Sector_3'] %}
-                        <p>• Projects related to infrastructure and built environment have a <span class="highlight">{{data['Sector_3_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Projects related to water security have a <span class="highlight">{{data['Sector_3_Risk']}}</span> level of exposure to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_4'] %}
-                    <p>• Projects related to water security have a <span class="highlight">{{data['Sector_4_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                    <p>• Projects related to infrastructure and built environment have a <span class="highlight">{{data['Sector_4_Risk']}}</span> level of exposure to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_5'] %}
@@ -149,7 +149,7 @@
                     <div class="d-flex flex-column align-items-center my-5">
                         <h5>Learn more about data sources and methodology:</h5>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                            <a class="btn btn-outline-primary btn-lx px-2 me-sm-3" href="{{ url_for('data', filename='CSPD_Guidebook.pdf') }}" target="_blank">Methodology</a>
+                            <a class="btn btn-outline-primary btn-lx px-2 me-sm-3" href="https://hdl.handle.net/10568/135730" target="_blank">Methodology</a>
                             <a class="btn btn-outline-primary btn-lx px-2 me-sm-3" href="#" data-bs-toggle="modal" data-bs-target="#dataModal">Data</a>
                         </div>
                      </div>
