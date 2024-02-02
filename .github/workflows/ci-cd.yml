@@ -44,4 +44,4 @@ jobs:
           git config --global user.email "devops@scio.systems"
           git config --global user.name "scio"
           git commit -m "Updated image for ${{ secrets.DOCKERHUB_REPOSITORY }}"
-          git push origin master
+          git push origin main
