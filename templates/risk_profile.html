@@ -37,51 +37,49 @@
                     <br />
                     <h2>1. Project Exposure to Conflict and Security Risks</h2>
                     <p style="text-align: justify;">This section offers a preliminary evaluation of the project's vulnerability to potential conflicts and security threats. The assessment conducted by CSPD draws on a robust dataset encompassing country-specific socio-economic indicators, historical conflict patterns, and metrics of institutional stability. Moreover, it analyzes conflict drivers to determine if the target country has experienced conflict onsets specifically related to the project's sector of investment. The findings presented in this section provide a foundational understanding of the potential risks involved and serve as a preliminary tool for project managers and stakeholders to make informed decisions, ensuring that the project does not encounter unforeseen operational and security risks.</p>
-                    <p style="text-align: justify;">Your project's potential exposure to conflict and security threats, based on the country and sectors you have selected, is assessed to be <span class="highlight">{{highest_aggregate}}</span>. The analysis of conflict and socio-economic data at the national level indicates that projects in <span class="highlight">{{data['COUNTRY']}}</span> have a <span class="highlight">{{data['Conflict Risk']}}</span> exposure to conflict risks, a <span class="highlight">{{data['Institutional Risk']}}</span> exposure to institutional risk, and a <span class="highlight">{{data['Socio-economic Risk']}}</span> exposure to socio-economic risk.</p>
                     <div class="chart-container">
                         <canvas id="myChart"></canvas>
                     </div>
                     <br/>
-                    <p style="text-align: justify;"> The analysis of conflict drivers in <span class="highlight">{{data['COUNTRY']}}</span> reveals that:</p>
-                    
+                    <p style="text-align: justify;">The project's potential exposure to conflict and security risks, based on the country and sectors you have selected, is assessed to be <span class="highlight">{{highest_aggregate}}</span>. The analysis of conflict and socio-economic data at the national level indicates that projects in <span class="highlight">{{data['COUNTRY']}}</span> have <span class="highlight">{{data['Institutional Risk']}}</span> exposure to institutional risk, a <span class="highlight">{{data['Socio-economic Risk']}}</span> exposure to socio-economic risk, and <span class="highlight">{{data['Conflict Risk']}}</span> exposure to current and projected conflict risks at the national level. The conflict risk is further compounded by an analysis of conflict drivers of individual conflict onsets in <span class="highlight">{{data['COUNTRY']}}</span>, which reveals that: </p>
                     {% if user_data['Sector_1'] %}
-                        <p>• Projects related to the health sector have a <span class="highlight">{{data['Sector_1_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Health sector projects show <span class="highlight">{{data['Sector_1_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_2'] %}
-                        <p>• Projects related to food security have a <span class="highlight">{{data['Sector_2_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Food security projects show <span class="highlight">{{data['Sector_2_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
     
                     {% if user_data['Sector_3'] %}
-                        <p>• Projects related to water security have a <span class="highlight">{{data['Sector_3_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Water security projects show <span class="highlight">{{data['Sector_3_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_4'] %}
-                    <p>• Projects related to infrastructure and built environment have a <span class="highlight">{{data['Sector_4_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                    <p>• Infrastructure and built environment projects show <span class="highlight">{{data['Sector_4_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_5'] %}
-                        <p>• Projects related to livelihoods of people and communities have a <span class="highlight">{{data['Sector_5_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Livelihoods of people and communities projects show <span class="highlight">{{data['Sector_5_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_6'] %}
-                        <p>• Projects related to ecosystems and ecosystem services have a <span class="highlight">{{data['Sector_6_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Ecosystems and ecosystem services projects show <span class="highlight">{{data['Sector_6_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_7'] %}
-                        <p>• Projects related to energy generation and access have a <span class="highlight">{{data['Sector_7_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Energy generation and access projects show <span class="highlight">{{data['Sector_7_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_8'] %}
-                        <p>• Projects related to buildings, cities, and industries have a <span class="highlight">{{data['Sector_8_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Buildings, cities, and industries projects show <span class="highlight">{{data['Sector_8_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
                     
                     {% if user_data['Sector_9'] %}
-                        <p>• Projects related to the transport sector have a <span class="highlight">{{data['Sector_9_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                        <p>• Transport sector projects show <span class="highlight">{{data['Sector_9_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                     {% if user_data['Sector_10'] %}
-                            <p>• Projects related to forest and land use have a <span class="highlight">{{data['Sector_9_Risk']}}</span> level of exposure to conflict-related risks.</p>
+                            <p>• Forest and land use projects show <span class="highlight">{{data['Sector_9_Risk']}}</span> sensitivity to conflict-related risks.</p>
                     {% endif %}
 
                    
@@ -160,7 +158,7 @@
         <!-- Footer-->
         <footer id="sticky-footer" class="py-5 bg-dark">
             <div class="container px-5">
-                <p class="m-0 text-center text-white">Copyright &copy; 2023 CGIAR System Organization. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="footer-link" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>
+                <p class="m-0 text-center text-white">Copyright &copy; 2025 CGIAR System Organization. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" class="footer-link" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></p>
                 <div class="text-center mt-4">
                     <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modala">Privacy</a> |
                     <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modalb">Terms</a> |
@@ -320,13 +318,13 @@
     <script>
         (function() {
             let ctx1 = document.getElementById('myChart').getContext('2d');
-            let labels1 = ['Current & Projected Conflict Intensity', 'Presence of Project Related Conflict Drivers', 'Lack of Institutional Capacity', 'Socio-economic Vulnerability'];
+            let labels1 = ['Current & Projected Conflict Intensity', , 'Lack of Institutional Capacity', 'Socio-economic Vulnerability'];
             let data1 = {
                 labels: labels1,
                 datasets: [{
                     label: 'Risk Exposure',
                     data: [
-                        "{{ risk_level[data['Conflict Risk']] }}",
+                        
                         "{{ risk_level[highest_sector_risk] }}",
                         "{{ risk_level[data['Institutional Risk']] }}",
                         "{{ risk_level[data['Socio-economic Risk']] }}"

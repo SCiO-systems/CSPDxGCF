@@ -3,16 +3,38 @@
 <li>Source: INFORM Risk Index; <a href="https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk">https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk</a></li>
 <li>Data type accessed: Human, Development &amp; Deprivation, Inequality, Uprooted people, Institutional.</li>
 <li>Countries: Non-Annex I countries (excluding Marshall Islands, Palau, Tuvalu, Andorra, Cook Islands, San Marino).</li>
-<li>Dataset version: v67.</li>
-<li>Data accessed: 20 October 2023.</li>
+<li>Dataset version: v69.</li>
+<li>Data accessed: 3 January 2024.</li>
 <li>Data manipulation: conflict risk was derived from INFORM's 'human' data category; socio-economic risk was derived from INFORM's 'Development &amp; Deprivation', 'Inequality', 'Uprooted people' categories; Institutional risk was derived from INFORM's 'Institutional' category (see methodology report for more information).</li>
 </ul>
 <p style="text-align: left;"><strong><em>4) Presence of project related conflict drivers</em>:</strong></p>
-<ul>
+<ul style="text-align: left;">
 <li style="text-align: left;">Source: Armed Conflict Location &amp; Event Data Project (ACLED); <a href="https://www.acleddata.com.">https://www.acleddata.com. </a></li>
 <li style="text-align: left;">Data type accessed: battles, riots, explosions/remote violence, violence against civilians, strategic developments.</li>
 <li style="text-align: left;">Countries: Non-Annex I countries (excluding Marshall Islands, Palau, Tuvalu, Andorra, Cook Islands, San Marino).</li>
-<li style="text-align: left;">Timeframe: January 2019 to September 2023.</li>
-<li style="text-align: left;">Data accessed: 20 October 2023.</li>
+<li style="text-align: left;">Timeframe: January 2020 to December 2024.</li>
+<li style="text-align: left;">Data accessed:3 January 2024.</li>
 <li style="text-align: left;">Data manipulation: the data was analyzed with an automated content analysis (see methodology report) to identify ACLED events that have conflict drivers relating to the GCF sectors of investment.</li>
+</ul>
+<p style="text-align: left;"><strong><em>2025 </em></strong><strong>Changelog Summary:</strong></p>
+<ul>
+<li style="text-align: left;">
+<p><strong>Sector Risk Calculation</strong></p>
+<ul>
+<li>Incorporated absolute onsets, within-country proportions, and global share of conflicts into a composite index.</li>
+</ul>
+</li>
+<li>
+<p style="text-align: left;"><strong>Aggregation with Conflict, Institutional, and Socio-economic Risks</strong></p>
+<ul>
+<li style="text-align: left;">Adjusted <code>Conflict Risk</code> based on each sector&rsquo;s risk:
+<ul>
+<li>If <code>Sector_Risk</code> exceeds <code>Conflict Risk</code>, the conflict risk is raised.</li>
+<li>If <code>Conflict Risk</code> is high and <code>Sector_Risk</code> is Low, the conflict risk is lowered to Medium.</li>
+</ul>
+</li>
+<li style="text-align: left;">Weighted the updated <code>Conflict Risk</code> (&times;2) plus <code>Institutional Risk</code> (&times;1) and <code>Socio-economic Risk</code> (&times;1) to create an aggregate exposure score.</li>
+<li style="text-align: left;">Binned scores into Low, Medium, or High categories using percentile cutoffs.</li>
+</ul>
+</li>
 </ul>
